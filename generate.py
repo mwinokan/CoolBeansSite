@@ -20,8 +20,11 @@ def cool_beans():
 
     print(f"site({title})")
 
-    contact = "+31 (0) 650281410"
-    address = "Haarlemmerweg 315D<br>1051 LG, Amsterdam<br>Nederland"
+    contact = """Richard: <a href="mailto:rc@coolbeanspix.com">rc@coolbeanspix.com</a><br>
+Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>
+Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
+"""
+    address = "Haarlemmerweg 319-C<br>1051 LG, Amsterdam<br>Nederland"
 
     accent_color1 = "blue"
     accent_color2 = "lime"
@@ -33,7 +36,7 @@ def cool_beans():
 
     logo_url = "https://github.com/mwinokan/RichardSites/blob/main/assets/cool_beans_logo.png?raw=true"
 
-    from cool_beans import ABOUT, MOVIES
+    from cool_beans import ABOUT, MOVIES, TEXT_SECTIONS
 
     movies = MOVIES
 
@@ -53,35 +56,10 @@ def cool_beans():
         title,
         text_buffer,
         movies,
+        text_sections=TEXT_SECTIONS
     )
 
     write_buffer(html_buffer)
-
-
-# def katuni(movies):
-
-#   title = 'Katuni Animation'
-
-#   print(f'site({title})')
-
-#   contact = "+31 (0) 650281410"
-#   address = "Haarlemmerweg 315D<br>1051 LG, Amsterdam<br>Nederland"
-
-#   accent_color1 = "tomato"
-#   accent_color2 = "SlateBlue"
-#   accent_color3 = "DarkRed"
-
-#   accent_contrast1 = "black"
-#   accent_contrast2 = "white"
-#   accent_contrast3 = "white"
-
-#   logo_url = 'https://github.com/mwinokan/RichardSites/blob/main/assets/katuni_logo.jpg?raw=true'
-
-#   text_buffer = 'Cool Beans BV is run by producers Richard Claus and Chantal Nissen, the Amsterdam animation outfit Katuni and the German Comet Film are its sister companies.</p><p>All of Cool Beans productions are international co-productions, including <i>Black Butterflies</i>, <i>The Price of Sugar</i>, <i>An Act of Defiance</i> and the recent 3D animated films <i>The Little Vampire 3D</i> (2017) in co-production with A. Film (Denmark) and <i>Ainbo</i> (2020) in co-production with Tunche Films (Peru).</p><p>The next 3D animated film coming from Cool Beans and Katuni is <i>Panda Bear in Africa</i>, which is set to start animation end of 2021. Le Pacte (France) joined the successful Dutch/German/Danish team that produced <i>The Little Vampire 3D</i> as the French co-producer in 2019, and sales agent CMG – Cinema Management Group has already sold an astonishing number of territories. There is still room for co-producers, animation studios and other partners to come on board.</p><p>Cool Beans’ development slate also includes new live action films, among others the Dutch “multiculti” comedy <i>Matties</i> and the historic drama <i>Tutuba</i>; the series <i>Panama Panic</i> and the animated series <i>The Little Vampire</i>.'
-
-#   html_buffer = create_site(address, accent_color1, accent_color2, accent_color3, accent_contrast1, accent_contrast2, accent_contrast3, contact, logo_url, title, text_buffer,movies)
-
-#   write_buffer(html_buffer,subdir='katuni')
 
 
 def create_site(
@@ -100,6 +78,7 @@ def create_site(
     max_width=4000,
     slideshow_auto=False,
     slideshow_rate=5,
+    text_sections=None,
 ):
 
     # preamble
@@ -259,13 +238,13 @@ def create_site(
     html_buffer += "<br>\n"
     html_buffer += "<br>\n"
     html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
-    html_buffer += "<h2>Projects</h2>\n"
+    html_buffer += "<h2>Productions</h2>\n"
     html_buffer += "</div>\n"
     html_buffer += "<br>\n"
 
     # poster grid
     html_buffer += (
-        f'<div class="w3-content w3-padding-large" style="max-width:{max_width}px">\n'
+        f'<div class="w3-content w3-padding-large" style="max-width:1200px">\n'
     )
     html_buffer += '<div class="w3-container">\n'
 
@@ -401,6 +380,18 @@ def create_site(
                     }
                     """
     html_buffer += "</script>\n"
+
+    if text_sections:
+
+        for title, content in text_sections.items():
+            html_buffer += "<br>\n"
+            html_buffer += "<br>\n"
+            html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
+            html_buffer += f"<h2>{title}</h2>\n"
+            html_buffer += "</div>\n"
+            html_buffer += "<br>\n"
+            
+            html_buffer += f'<div class="w3-content w3-padding-large" style="max-width:800px">{content}</div>\n'
 
     # end body
     html_buffer += "</body>\n"

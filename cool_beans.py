@@ -296,3 +296,76 @@ WINNER SPECIAL JURY PRICE GÉRARDMER FILM FESTIVAL FRANCE<br>
 
 
 ###
+
+TEXT_SECTIONS = {
+    "Producers": """<h2>RICHARD CLAUS</h2>
+<p>Richard Claus studied at the German Film and Television Academy in Berlin. After graduating he worked as a cameraman, directed and shot several TV documentaries and wrote and directed two theatrical films. In 1986 Richard co-founded and served as the managing director of the German production and distribution company Delta Film in Berlin and produced several mostly German language theatrical feature films. In 1994 he co-founded the Cometstone companies with offices in Amsterdam and Los Angeles, which he was running until 1999. During this period, he lived predominantly in Los Angeles. In 2000 Richard moved back from the US to Europe, producing with his companies Comet Film in Germany and Cool Beans in the Netherlands, and between 2008 and 2017 Richard produced five theatrical films in South Africa. Richard also produced and directed the animated movies The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023).</p>
+<h2>CHANTAL NISSEN</h2>
+<p>[Waiting for a revised version] Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and Journalism, with a focus on audience experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. From children’s live-action television and human-interest programs to long- and short-form documentaries and video installations, her projects. Chantal’s work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.</p>
+<h2>RIENKJE ATTOH</h2>
+<p>[Waiting for version]<p>
+""",
+    "COMET FILM": """<p>Producer Richard Claus produced and co-produced with Comet Film and its predecessors Cometstone Pictures and Delta Film the following films:</p>
+
+<ul>
+<li>ROUGE BAISER, 1985, a French-German co-production directed by Vera Belmont, which won Best Actress at the Berlin Film Festival
+<li>PARADIES, 1986, directed by Doris Dörrie, winner of two German Film Awards in Gold
+<li>ALS DIE LIEBE LAUFEN LERNTE, 1988, a low-budget box-office hit directed by Michael Strauven
+<li>SUPERSTAU, 1991, a German cult-comedy, directed by Manfred Stelzer
+<li>MUTE WITNESS, 1994, with Sony Classics, directed by Anthony Waller, selected for the Directors’ Fortnight Cannes and for the Sundance Film Festival
+<li>AN AMERICAN WEREWOLF IN PARIS, 1997, with the Walt Disney Studios, directed by Anthony Waller
+<li>THE LITTLE VAMPIRE, 1999, with New Line Cinema, directed by Uli Edel, won the German Film Award in Gold as best family film 
+<li>THE THIEF LORD, 2004, which Richard also co-wrote and directed, based on Cornelia Funke’s international bestseller, with Warner Bros. and 20th CenturyFox
+<li>LAURA’S STAR, 2004, animated film directed by Thilo Graf Rothkirch and Ute von Münchow-Pohl, German Film Award in Gold and winner of four film festivals
+<li>THE UGLY DUCKLING & ME, 2006, animated film directed by Karsten Kiilerich, with A.Film Copenhagen and Warner Bros.
+<li>DODO, 2007, animated film directed by Thilo Graf Rothkirch and Ute von Münchow-Pohl, winner of the Silver World Medal at the New York Festival
+<li>LAURA’S STAR AND THE DREAM MONSTERS, 2011, animated film directed by Thilo Graf Rothkirch and Ute von Münchow-Pohl, German Film Award in Gold and winner of four film festivals
+</ul>
+<p>Commencing in 2008, Comet Film has co-produced most of its sister company Cool Beans’ international co-production. </p>
+<br>
+<p><strong>COMET FILM GmbH</strong><br>
+Wilhelminenstraße 6<br>
+01099 Dresden<br>
+Germany<br>
+<br>
+Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
+</p>
+""",
+    "BROADBEAN MEDIA": """<p>Broadbean Media,  based in Cape Town and associated with Cool Beans, has delivered production services and visual effects work for the following productions:</p>
+
+<ul>
+<li>THE SILENT ARMY, 2008, directed by Jean van de Velde, Official selection Cannes 2009 “Un Certain Regard”, winner of the Golden Film award in The Netherlands
+<li>THE SILENT ARMY, 2008, directed by Jean van de Velde, Official selection Cannes 2009 “Un Certain Regard”, winner of the Golden Film award in The Netherlands
+<li>BLACK BUTTERFLIES, 2010, won the Best Actress award at Tribecca and the Audience Award in Taormina, three Golden Calves at the Dutch Film Awards 2011 including Best Picture and six SAFTA (South African Film and TV Academy) Awards including Best Picture
+<li>THE HEINEKEN KIDNAP, 2011, directed by Maarten Treurniet and with Rutger Hauer in the title role, received the Dutch Platinum Film Award
+<li>THE LITTLE VAMPIRE 3D, 2017, the first 3D computer animated film in the Netherlands, directed by Richard Claus and Karsten Kiilerich, with CMG Cinema Management Group
+<li>BRAM FISCHER, 2017, directed by Jean van de Velde, the first official Netherlands/South-African co-production, which won multiple awards at festivals and two Golden Calves at the Dutch Film Awards
+<li>PANDA BEAR IN AFRICA, 2024, an animated film directed by Richard Claus and Karsten Kiilerich, in co-production with A. Film (Denmark), Le Pacte (France) and Comet Film (Germany), with sales agent CMG
+</ul>
+<p>Commencing in 2008, Comet Film has co-produced most of its sister company Cool Beans’ international co-production. </p>
+<br>
+<p><strong>BROADBEAN MEDIA (PTY) LTD</strong><br>
+30 Rose Street<br>
+Cape Town, 8001<br>
+South Africa<br>
+<br>
+Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
+</p>
+""",
+    "SO & SO PRODUCTIONS": """<p>Rienkje Attoh’s production company, So & So Productions, is based in London and associated with Cool Beans</p>
+<p><strong>SO & SO PRODUCTIONS</strong><br>
+<br>
+Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
+</p>
+""",
+    "KATUNI": """<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
+<br>
+Haarlemmerweg 317-H<br>
+1051 LG Amsterdam<br>
+The Netherlands<br>
+<br>
+Richard: <a href="mailto:rc@coolbeanspix.com">rc@coolbeanspix.com</a><br>
+Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>
+</p>
+""",
+}
