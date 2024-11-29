@@ -20,6 +20,20 @@ h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}body {font-family: "Open Sans"}
 <div class="w3-top">
 <div class="w3-bar w3-center w3-padding-large" style="background-color:white">
 <img src="https://github.com/mwinokan/RichardSites/blob/main/assets/cool_beans_logo.png?raw=true" alt="Cool Beans BV Logo" style="width:40%;max-width:200px">
+<div class="w3-display-left w3-container"><div class="w3-dropdown-hover">
+<button class="w3-xlarge w3-button w3-white">&#9776;
+</button>
+<div id="demo" class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color:red;color:white">
+<a href="#about" class="w3-bar-item w3-button">About Cool Beans BV</a>
+<a href="#productions" class="w3-bar-item w3-button">Productions</a>
+<a href="#producers" class="w3-bar-item w3-button">Producers</a>
+<a href="#comet_film" class="w3-bar-item w3-button">COMET FILM</a>
+<a href="#broadbean_media" class="w3-bar-item w3-button">BROADBEAN MEDIA</a>
+<a href="#so_and_so_productions" class="w3-bar-item w3-button">SO & SO PRODUCTIONS</a>
+<a href="#katuni" class="w3-bar-item w3-button">KATUNI</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </header>
@@ -34,6 +48,10 @@ h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}body {font-family: "Open Sans"}
 <div class="w3-display-container mySlides"> 
 <img src="assets/bram_screen.jpg" style="width:100%">
 <div class="w3-padding w3-display-bottomleft w3-text-white"><h3>AN ACT OF DEFIANCE / BRAM FISCHER</h3></div>
+</div>
+<div class="w3-display-container mySlides"> 
+<img src="assets/vampire_screen.jpg" style="width:100%">
+<div class="w3-padding w3-display-bottomleft w3-text-white"><h3>THE LITTLE VAMPIRE 3D</h3></div>
 </div>
 <div class="w3-display-container mySlides"> 
 <img src="assets/sugar_screen.jpg" style="width:100%">
@@ -64,7 +82,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}body {font-family: "Open Sans"}
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-var slideIndex = getRandomInt(7);
+var slideIndex = getRandomInt(8);
 showDivs(slideIndex);
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -90,7 +108,7 @@ function showDivs(n) {
 </script>
 <div class="w3-content" style="max-width:800px">
 <div class="w3-container w3-padding-large">
-<h2>About Cool Beans BV</h2>
+<div id="about" style="height: 100px; margin-top: -100px;"></div><h2>About Cool Beans BV</h2>
 <p>
 Cool Beans BV is an independent film production company, established in 2008 and headquartered in Amsterdam, the Netherlands. Cool Beans and its producers Richard Claus, Chantal Nissen and Rienkje Attoh have a proven track record of successful international co-productions with a certain preference for films with socially relevant topics and the family entertainment genre.<br><br>Together with its German sister company Comet Film and its predecessors, Cool Beans has produced more than theatrical 20 feature films in collaboration with leading companies such as Disney, New Line Cinema, Warner Bros., Fox, Sony Classics, Icon, Propaganda Films, and Sidney Kimmel Entertainment. These films have benefited from sources of public funding, such as the FFA and regional funds in Germany, the Netherlands Film Fund and the Abraham Tuschinski Fund, the Danish Film Institute, France’s CNC, Eurimages, Creative Europe, and various rebate programs in South Africa, Ireland, Germany, the Netherlands, Estonia, and Luxembourg.<br><br>Cool Beans is a member of NAPA (the Netherlands Audiovisual Producers Alliance), and its producers are members to the Dutch Academy for Film.</p>    
 </div>
@@ -112,7 +130,7 @@ Cool Beans BV is an independent film production company, established in 2008 and
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>Productions</h2>
+<div id="productions" style="height: 100px; margin-top: -100px;"></div><h2>Productions</h2>
 </div>
 <br>
 <div class="w3-content w3-padding-large" style="max-width:1200px">
@@ -132,14 +150,14 @@ Cool Beans BV is an independent film production company, established in 2008 and
 <div class="w3-container">
 <span onclick="document.getElementById('panda_trailer').style.display='none'"class="w3-button w3-display-topright">&times;</span>
 <h2>PANDA BEAR IN AFRICA</h2>
-<iframe width="100%" height="500" src="https://player.vimeo.com/video/912613069" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/_VJ2A1iFnGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>A fun and adventurous young Panda travels from China to Africa to rescue his best friend, Jielong the Dragon, who has been kidnapped. A fish-out of water comedy, a coming of age story.
 </p>
 <table>
 <tr>
 <td>
 <strong>
-BEST FAMILY FILM FESTIVAL AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN</stong>
+BEST FAMILY FILM AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN</stong>
 </td>
 </tr>
 <tr>
@@ -201,7 +219,7 @@ ROBERT SPRACKLING</td>
 PRODUCED BY</strong>
 </td>
 <td>
-RICHARD CLAUS, CHANTAL NISSSEN</td>
+RICHARD CLAUS, CHANTAL NISSEN</td>
 </tr>
 <tr>
 <td>
@@ -253,7 +271,7 @@ CINEMA MANAGEMENT GROUP</td>
 <div class="w3-container">
 <span onclick="document.getElementById('ainbo_trailer').style.display='none'"class="w3-button w3-display-topright">&times;</span>
 <h2>AINBO - SPIRIT OF THE AMAZON</h2>
-<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/VtJmptdYyEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://player.vimeo.com/video/478581055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Ainbo was born and grew up in the deepest jungle of the Amazon. One day she discovers that her homeland is being threatened by illegal and ruthless mining. Using the help of her spirit guides Vaca and Dillo she embarks on a journey to save her land and save her people before it’s too late.</p>
 <br>
 <table>
@@ -287,7 +305,7 @@ BRIAN CLEVELAND & JASON CLEVELAND, LARRY WILSON, RICHARD CLAUS</td>
 PRODUCED BY</strong>
 </td>
 <td>
-RICHARD CLAUS, CESAR ZELADA, JOSE ZELADA, SERGIO ZELADA</td>
+RICHARD CLAUS, CÉSAR ZELADA, JOSÉ ZELADA, SERGIO ZELADA</td>
 </tr>
 <tr>
 <td>
@@ -467,11 +485,148 @@ CINEMA MANAGEMENT GROUP </td>
 </div>
 <br><div class="w3-row">
 <div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
+<img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('vampire_trailer').style.display='block'" src="assets/vampire_poster.jpg" alt="THE LITTLE VAMPIRE 3D Poster" style="width:100%"></a>
+<div class="w3-container">
+<h2>THE LITTLE VAMPIRE 3D</h2>
+<p>In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.
+
+</p>
+</div>
+</div>
+<div id="vampire_trailer" class="w3-modal">
+<div class="w3-modal-content">
+<div class="w3-container">
+<span onclick="document.getElementById('vampire_trailer').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+<h2>THE LITTLE VAMPIRE 3D</h2>
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/CB_-u2lMNxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.
+</p>
+<table>
+<tr>
+<td>
+<strong>
+GOLDEN CALF BEST ACTOR NETHERLANDS</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+GOLDEN CALF BEST SCREENPLAY NETHERLANDS</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+WINNER AUDIENCE AWARD MILL VALLEY FILM FESTIVAL</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+WINNER BEST FILM UK JEWISH FILM FESTIVAL</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+AUDIENCE CHOICE AWARD BEST NARRATIVE FEATURE SEATTLE JEWISH FILM FESTIVAL</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+BEST FILM ZILVEREN KRULSTAART SCREENPLAY AWARD</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+BEST ACTRESS CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL </stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+BEST SCRIPT CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL </stong>
+</td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td>
+<strong>
+YEAR / FORMAT</strong>
+</td>
+<td>
+2017 / 3D ANIMATION / FEATURE FILM</td>
+</tr>
+<tr>
+<td>
+<strong>
+DIRECTED BY</strong>
+</td>
+<td>
+RICHARD CLAUS, KARSTEN KIILERICH</td>
+</tr>
+<tr>
+<td>
+<strong>
+SCREENPLAY BY</strong>
+</td>
+<td>
+LARRY WILSON, RICHARD CLAUS</td>
+</tr>
+<tr>
+<td>
+<strong>
+BASED ON</strong>
+</td>
+<td>
+“THE LITTLE VAMPIRE” NOVELS BY ANGELA SOMMER-BODENBURG</td>
+</tr>
+<tr>
+<td>
+<strong>
+PRODUCED BY</strong>
+</td>
+<td>
+RICHARD CLAUS</td>
+</tr>
+<tr>
+<td>
+<strong>
+CAST</strong>
+</td>
+<td>
+JIM CARTER, RASMUS HARDIKER, ALICE KRIGE, MIRIAM MARGOLYES</td>
+</tr>
+<tr>
+<td>
+<strong>
+CO-PRODUCERS</strong>
+</td>
+<td>
+A. FILM (DENMARK), COMET FILM (GERMANY), KATUNI (NETHERLANDS)</td>
+</tr>
+<tr>
+<td>
+<strong>
+INTERNATIONAL SALES</strong>
+</td>
+<td>
+CINEMA MANAGEMENT GROUP </td>
+</tr>
+</table>
+<br><br>
+</div>
+</div>
+</div>
+<div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
 <img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('sugar_trailer').style.display='block'" src="assets/sugar_poster.jpg" alt="THE PRICE OF SUGAR Poster" style="width:100%"></a>
 <div class="w3-container">
 <h2>THE PRICE OF SUGAR</h2>
-<p>The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>
-
+<p>Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.<br><br>
 </p>
 </div>
 </div>
@@ -481,13 +636,18 @@ CINEMA MANAGEMENT GROUP </td>
 <span onclick="document.getElementById('sugar_trailer').style.display='none'"class="w3-button w3-display-topright">&times;</span>
 <h2>THE PRICE OF SUGAR</h2>
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/IEhbgSiT-Fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>
-</p>
+<p>Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.<br><br></p>
 <table>
 <tr>
 <td>
 <strong>
-GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)</stong>
+THE NETHERLANDS' FIRST-EVER 3D ANIMATED FEATURE FILM</stong>
+</td>
+</tr>
+<tr>
+<td>
+<strong>
+WORLD WIDE BOX OFFICE $ 14 MILLION</stong>
 </td>
 </tr>
 </table>
@@ -547,7 +707,7 @@ YOOTHA WONG-LOI-SING, GAITE JANSEN</td>
 CO-PRODUCERS</strong>
 </td>
 <td>
-SPIER FILMS (SOUTH AFRICA), BNN-VARA (NETHERLANDS), PV PICTURES (NETHERLANDS)</td>
+SPIER FILMS (SOUTH AFRICA), BNNVARA (NETHERLANDS), PV PICTURES (NETHERLANDS)</td>
 </tr>
 <tr>
 <td>
@@ -628,7 +788,7 @@ KEES VAN BEIJNUM, MAARTEN TREURNIET</td>
 <tr>
 <td>
 <strong>
-PRODUCERS</strong>
+PRODUCED BY</strong>
 </td>
 <td>
 FRANS VAN GESTEL, RICHARD CLAUS, ARNOLD HESLENFELD</td>
@@ -662,6 +822,8 @@ BAVARIA INTERNATIONAL</td>
 </div>
 </div>
 </div>
+</div>
+<br><div class="w3-row">
 <div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
 <img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('butterflies_trailer').style.display='block'" src="assets/butterflies_poster.jpg" alt="BLACK BUTTERFLIES Poster" style="width:100%"></a>
 <div class="w3-container">
@@ -822,8 +984,6 @@ BAVARIA INTERNATIONAL</td>
 </div>
 </div>
 </div>
-</div>
-<br><div class="w3-row">
 <div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
 <img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('silent_trailer').style.display='block'" src="assets/silent_poster.jpg" alt="THE SILENT ARMY Poster" style="width:100%"></a>
 <div class="w3-container">
@@ -1969,11 +2129,13 @@ ARCLIGHT</td>
 </div>
 </div>
 </div>
+</div>
+<br><div class="w3-row">
 <div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
 <img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('vampire2000_trailer').style.display='block'" src="assets/vampire2000_poster.jpg" alt="THE LITTLE VAMPIRE Poster" style="width:100%"></a>
 <div class="w3-container">
 <h2>THE LITTLE VAMPIRE</h2>
-<p>A lonely American boy living in Scotland makes a new best friend, a fellow nine year-old who happens to be a vampire..<br><br>
+<p>A lonely American boy living in Scotland makes a new best friend, a fellow nine-year-old who happens to be a vampire..<br><br>
 
 </p>
 </div>
@@ -1984,7 +2146,7 @@ ARCLIGHT</td>
 <span onclick="document.getElementById('vampire2000_trailer').style.display='none'"class="w3-button w3-display-topright">&times;</span>
 <h2>THE LITTLE VAMPIRE</h2>
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/HRHWVeVFVf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>A lonely American boy living in Scotland makes a new best friend, a fellow nine year-old who happens to be a vampire..<br><br>
+<p>A lonely American boy living in Scotland makes a new best friend, a fellow nine-year-old who happens to be a vampire..<br><br>
 </p>
 <table>
 <tr>
@@ -2559,8 +2721,6 @@ COMETSTONE INTERNATIONAL</td>
 </div>
 </div>
 </div>
-</div>
-<br><div class="w3-row">
 <div class="w3-col l4 m12 s12 w3-padding-large" style="padding-left:0px;padding-right:0px">
 <img class="w3-card-4 w3-hover-opacity" onclick="document.getElementById('werewolf_trailer').style.display='block'" src="assets/werewolf_poster.jpg" alt="AN AMERICAN WEREWOLF IN PARIS Poster" style="width:100%"></a>
 <div class="w3-container">
@@ -4201,20 +4361,20 @@ J&M ENTERTAINMENT</td>
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>Producers</h2>
+<div id="producers" style="height: 100px; margin-top: -100px;"></div><h2>Producers</h2>
 </div>
 <br>
 <div class="w3-content w3-padding-large" style="max-width:800px"><h2>RICHARD CLAUS</h2>
 <p>Richard Claus studied at the German Film and Television Academy in Berlin. After graduating he worked as a cameraman, directed and shot several TV documentaries and wrote and directed two theatrical films. In 1986 Richard co-founded and served as the managing director of the German production and distribution company Delta Film in Berlin and produced several mostly German language theatrical feature films. In 1994 he co-founded the Cometstone companies with offices in Amsterdam and Los Angeles, which he was running until 1999. During this period, he lived predominantly in Los Angeles. In 2000 Richard moved back from the US to Europe, producing with his companies Comet Film in Germany and Cool Beans in the Netherlands, and between 2008 and 2017 Richard produced five theatrical films in South Africa. Richard also produced and directed the animated movies The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023).</p>
 <h2>CHANTAL NISSEN</h2>
-<p>[Waiting for a revised version] Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and Journalism, with a focus on audience experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. From children’s live-action television and human-interest programs to long- and short-form documentaries and video installations, her projects. Chantal’s work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.</p>
+<p>Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and in Journalism, with a focus on audience viewer experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. Besides feature films from children’s live-action television and human-interest programs to long- and short-form documentaries and video installations, her projects, . Chantal’sshe work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.has worked across most European countries, as well as South Africa, Australia, and the United States.</p>
 <h2>RIENKJE ATTOH</h2>
 <p>[Waiting for version]<p>
 </div>
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>COMET FILM</h2>
+<div id="comet_film" style="height: 100px; margin-top: -100px;"></div><h2>COMET FILM</h2>
 </div>
 <br>
 <div class="w3-content w3-padding-large" style="max-width:800px"><p>Producer Richard Claus produced and co-produced with Comet Film and its predecessors Cometstone Pictures and Delta Film the following films:</p>
@@ -4246,7 +4406,7 @@ Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>BROADBEAN MEDIA</h2>
+<div id="broadbean_media" style="height: 100px; margin-top: -100px;"></div><h2>BROADBEAN MEDIA</h2>
 </div>
 <br>
 <div class="w3-content w3-padding-large" style="max-width:800px"><p>Broadbean Media,  based in Cape Town and associated with Cool Beans, has delivered production services and visual effects work for the following productions:</p>
@@ -4273,7 +4433,7 @@ Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>SO & SO PRODUCTIONS</h2>
+<div id="so_and_so_productions" style="height: 100px; margin-top: -100px;"></div><h2>SO & SO PRODUCTIONS</h2>
 </div>
 <br>
 <div class="w3-content w3-padding-large" style="max-width:800px"><p>Rienkje Attoh’s production company, So & So Productions, is based in London and associated with Cool Beans</p>
@@ -4285,10 +4445,12 @@ Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
 <br>
 <br>
 <div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:4000px;background-color:blue">
-<h2>KATUNI</h2>
+<div id="katuni" style="height: 100px; margin-top: -100px;"></div><h2>KATUNI</h2>
 </div>
 <br>
-<div class="w3-content w3-padding-large" style="max-width:800px"><p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
+<div class="w3-content w3-padding-large" style="max-width:800px">
+<img src="assets/KatuniLogo_PNG.png" style="width:50%;max-width:150px">
+<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
 <br>
 Haarlemmerweg 317-H<br>
 1051 LG Amsterdam<br>
@@ -4301,7 +4463,7 @@ Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>
 </body>
 <footer class="w3-container" style="padding:32px;background-color:blue">
 <div class="w3-center w3-text-white">
-<p style="color:lime"><strong>KATUNI</strong></p>
+<p style="color:lime"><strong>Cool Beans BV</strong></p>
 <p>Haarlemmerweg 319-C<br>1051 LG, Amsterdam<br>Nederland</p>
 <p>Richard: <a href="mailto:rc@coolbeanspix.com">rc@coolbeanspix.com</a><br>
 Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>

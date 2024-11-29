@@ -30,9 +30,9 @@ Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
     accent_color2 = "lime"
     accent_color3 = "red"
 
-    accent_contrast1 = "red"
-    accent_contrast2 = "blue"
-    accent_contrast3 = "lime"
+    accent_contrast1 = "white"
+    accent_contrast2 = "black"
+    accent_contrast3 = "white"
 
     logo_url = "https://github.com/mwinokan/RichardSites/blob/main/assets/cool_beans_logo.png?raw=true"
 
@@ -81,6 +81,20 @@ def create_site(
     text_sections=None,
 ):
 
+    navigation_targets = {
+        "about":f"About {title}",
+        "productions":"Productions",
+    }
+
+    if text_sections:
+        new_sections = {}
+        for section_title, content in text_sections.items():
+            safe_title = section_title.replace(" ", "_").replace("&","and").lower()
+            navigation_targets[safe_title] = section_title
+            new_sections[safe_title] = (section_title, content)
+
+    mrich.print(navigation_targets)
+
     # preamble
     html_buffer = "<!DOCTYPE html>"
     html_buffer += "<html>\n"
@@ -116,16 +130,36 @@ def create_site(
     html_buffer += "<header>\n"
     html_buffer += '<div class="w3-top">\n'
     html_buffer += '<div class="w3-bar w3-center w3-padding-large" style="background-color:white">\n'
+    # html_buffer += '<div class="w3-bar-item">\n'
     html_buffer += (
         f'<img src="{logo_url}" alt="{title} Logo" style="width:40%;max-width:200px">\n'
     )
+    # html_buffer += '</div>\n'
+    html_buffer += '<div class="w3-display-left w3-container">'
+
+    # Navigation dropdown
+    html_buffer += '<div class="w3-dropdown-hover">\n'
+    html_buffer += '<button class="w3-xlarge w3-button w3-white">&#9776;\n'
+    html_buffer += '</button>\n'
+    html_buffer += f'<div id="demo" class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color:{accent_color3};color:{accent_contrast3}">\n'
+
+    for target, text in navigation_targets.items():
+        html_buffer += f'<a href="#{target}" class="w3-bar-item w3-button">{text}</a>\n'
+
+    html_buffer += '</div>\n'
+    html_buffer += '</div>\n'
+    html_buffer += "</div>\n"
+
     html_buffer += "</div>\n"
     html_buffer += "</div>\n"
     html_buffer += "</header>\n"
+
+    # DYNAMIC
     html_buffer += '<div class="w3-bar w3-center w3-padding w3-white">\n'
     html_buffer += (
         f'<img src="{logo_url}" alt="{title} Logo" style="width:40%;max-width:200px">\n'
     )
+
     html_buffer += "</div>\n"
 
     ### screencap slideshow
@@ -207,7 +241,8 @@ def create_site(
     # text content
     html_buffer += '<div class="w3-content" style="max-width:800px">\n'
     html_buffer += '<div class="w3-container w3-padding-large">\n'
-    html_buffer += f"<h2>About {title}</h2>\n"
+    html_buffer += '<div id="about" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
+    html_buffer += f'<h2>About {title}</h2>\n'
     html_buffer += "<p>\n"
 
     html_buffer += text_buffer
@@ -238,7 +273,8 @@ def create_site(
     html_buffer += "<br>\n"
     html_buffer += "<br>\n"
     html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
-    html_buffer += "<h2>Productions</h2>\n"
+    html_buffer += '<div id="productions" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
+    html_buffer += '<h2>Productions</h2>\n'
     html_buffer += "</div>\n"
     html_buffer += "<br>\n"
 
@@ -383,11 +419,13 @@ def create_site(
 
     if text_sections:
 
-        for title, content in text_sections.items():
+        for safe_title, (section_title, content) in new_sections.items():
+
             html_buffer += "<br>\n"
             html_buffer += "<br>\n"
             html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
-            html_buffer += f"<h2>{title}</h2>\n"
+            html_buffer += f'<div id="{safe_title}" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
+            html_buffer += f'<h2>{section_title}</h2>\n'
             html_buffer += "</div>\n"
             html_buffer += "<br>\n"
             

@@ -13,18 +13,18 @@ MOVIES.append(
         description="""A fun and adventurous young Panda travels from China to Africa to rescue his best friend, Jielong the Dragon, who has been kidnapped. A fish-out of water comedy, a coming of age story.
 """,
         awards=[
-            "BEST FAMILY FILM FESTIVAL AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN",
+            "BEST FAMILY FILM AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN",
             "OFFICIAL SELECTION STUTTGART INTERNATIONAL FESTIVAL OF ANIMATED FILM",
             "OFFICIAL SELECTION ANNECY FESTIVAL 2024",
             "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
         ],
-        trailer_url="https://vimeo.com/912613069",
+        trailer_url="https://youtu.be/_VJ2A1iFnGk",
         more_data={
             "YEAR / FORMAT": "2024 / 3D ANIMATION / FEATURE FILM",
             "DIRECTED BY": "RICHARD CLAUS, KARSTEN KIILERICH",
             "STORY BY": "KARSTEN KIILERICH, RICHARD CLAUS",
             "SCREENPLAY BY": "ROBERT SPRACKLING",
-            "PRODUCED BY": "RICHARD CLAUS, CHANTAL NISSSEN",
+            "PRODUCED BY": "RICHARD CLAUS, CHANTAL NISSEN",
             "CAST": "YOOTHA WONG-LOI-SING, GEORGINA VERBAAN, MAURITS DELCHOT, THOM HOFFMAN",
             "CO-PRODUCERS": "A. FILM (DENMARK), LE PACTE (FRANCE), COMET FILM (GERMANY)",
             "ANIMATION STUDIOS": "KATUNI, A. FILM",
@@ -40,12 +40,13 @@ MOVIES.append(
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="Ainbo was born and grew up in the deepest jungle of the Amazon. One day she discovers that her homeland is being threatened by illegal and ruthless mining. Using the help of her spirit guides Vaca and Dillo she embarks on a journey to save her land and save her people before it’s too late.",
-        trailer_url="https://www.youtube.com/watch?v=VtJmptdYyEk",
+        trailer_url="https://vimeo.com/478581055",
+        # trailer_url="https://www.youtube.com/watch?v=VtJmptdYyEk",
         more_data={
             "YEAR / FORMAT": "2021 / 3D ANIMATION / FEATURE FILM",
             "DIRECTED BY": "JOSÉ ZELADA, RICHARD CLAUS ",
             "WRITTEN BY": "BRIAN CLEVELAND & JASON CLEVELAND, LARRY WILSON, RICHARD CLAUS",
-            "PRODUCED BY": "RICHARD CLAUS, CESAR ZELADA, JOSE ZELADA, SERGIO ZELADA",
+            "PRODUCED BY": "RICHARD CLAUS, CÉSAR ZELADA, JOSÉ ZELADA, SERGIO ZELADA",
             "CAST": "LOLA RAIE, THOM HOFFMANN, NAOMI SERRANO",
             "ANIMATION STUDIOS": "KATUNI, A. FILM",
             "CO-PRODUCERS": "TUNCHE FILMS (PERU), COMET FILM (GERMANY)",
@@ -88,13 +89,47 @@ MOVIES.append(
 
 MOVIES.append(
     Movie(
+        name="vampire",
+        title="THE LITTLE VAMPIRE 3D",
+        # year=2021,
+        imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
+        description="""In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.
+""",
+        awards=[
+            "GOLDEN CALF BEST ACTOR NETHERLANDS",
+            "GOLDEN CALF BEST SCREENPLAY NETHERLANDS",
+            "WINNER AUDIENCE AWARD MILL VALLEY FILM FESTIVAL",
+            "WINNER BEST FILM UK JEWISH FILM FESTIVAL",
+            "AUDIENCE CHOICE AWARD BEST NARRATIVE FEATURE SEATTLE JEWISH FILM FESTIVAL",
+            "BEST FILM ZILVEREN KRULSTAART SCREENPLAY AWARD",
+            "BEST ACTRESS CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
+            "BEST SCRIPT CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
+        ],
+        trailer_url="https://youtu.be/CB_-u2lMNxw",
+        more_data={
+            "YEAR / FORMAT": "2017 / 3D ANIMATION / FEATURE FILM",
+            "DIRECTED BY": "RICHARD CLAUS, KARSTEN KIILERICH",
+            "SCREENPLAY BY": "LARRY WILSON, RICHARD CLAUS",
+            "BASED ON": "“THE LITTLE VAMPIRE” NOVELS BY ANGELA SOMMER-BODENBURG",
+            "PRODUCED BY": "RICHARD CLAUS",
+            "CAST": "JIM CARTER, RASMUS HARDIKER, ALICE KRIGE, MIRIAM MARGOLYES",
+            "CO-PRODUCERS": "A. FILM (DENMARK), COMET FILM (GERMANY), KATUNI (NETHERLANDS)",
+            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
+        },
+    )
+)
+
+MOVIES.append(
+    Movie(
         name="sugar",
         title="THE PRICE OF SUGAR",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
-        description="""The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>
-""",
-        awards=["GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)"],
+        description="""Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.<br><br>""",
+        awards=[
+            "THE NETHERLANDS' FIRST-EVER 3D ANIMATED FEATURE FILM",
+            "WORLD WIDE BOX OFFICE $ 14 MILLION",
+        ],
         trailer_url="https://youtu.be/IEhbgSiT-Fo",
         more_data={
             "YEAR / FORMAT": "2013 / LIVE ACTION / FEATURE FILM AND SERIES",
@@ -103,7 +138,7 @@ MOVIES.append(
             "BASED ON THE BOOK": "THE PRIZE OF SUGAR BY CYNTHIA MCLEOD",
             "PRODUCED BY": "PAUL VOORTHUYSEN, RICHARD CLAUS, MIKE AURET",
             "CAST": "YOOTHA WONG-LOI-SING, GAITE JANSEN",
-            "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNN-VARA (NETHERLANDS), PV PICTURES (NETHERLANDS)",
+            "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNNVARA (NETHERLANDS), PV PICTURES (NETHERLANDS)",
             "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
         },
     )
@@ -127,7 +162,7 @@ MOVIES.append(
             "YEAR / FORMAT": "2011 / LIVE ACTION / FEATURE FILM ",
             "DIRECTED BY": "MAARTEN TREURNIET",
             "WRITTEN BY ": "KEES VAN BEIJNUM, MAARTEN TREURNIET",
-            "PRODUCERS": "FRANS VAN GESTEL, RICHARD CLAUS, ARNOLD HESLENFELD",
+            "PRODUCED BY": "FRANS VAN GESTEL, RICHARD CLAUS, ARNOLD HESLENFELD",
             "CAST": "RUTGER HAUER, REINOUT SCHOLTEN VAN ASCHAT, GIJS NABER",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), IDTV (NETHERLANDS)",
             "INTERNATIONAL SALES": "BAVARIA INTERNATIONAL",
@@ -225,7 +260,7 @@ MOVIES.append(
         title="THE LITTLE VAMPIRE",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
-        description="""A lonely American boy living in Scotland makes a new best friend, a fellow nine year-old who happens to be a vampire..<br><br>
+        description="""A lonely American boy living in Scotland makes a new best friend, a fellow nine-year-old who happens to be a vampire..<br><br>
 """,
         awards="""GERMAN FILM AWARD GOLD BEST FAMILY FILM<br>
 WORLD WIDE BOX OFFICE $ 28 MILLION<br>
@@ -301,7 +336,7 @@ TEXT_SECTIONS = {
     "Producers": """<h2>RICHARD CLAUS</h2>
 <p>Richard Claus studied at the German Film and Television Academy in Berlin. After graduating he worked as a cameraman, directed and shot several TV documentaries and wrote and directed two theatrical films. In 1986 Richard co-founded and served as the managing director of the German production and distribution company Delta Film in Berlin and produced several mostly German language theatrical feature films. In 1994 he co-founded the Cometstone companies with offices in Amsterdam and Los Angeles, which he was running until 1999. During this period, he lived predominantly in Los Angeles. In 2000 Richard moved back from the US to Europe, producing with his companies Comet Film in Germany and Cool Beans in the Netherlands, and between 2008 and 2017 Richard produced five theatrical films in South Africa. Richard also produced and directed the animated movies The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023).</p>
 <h2>CHANTAL NISSEN</h2>
-<p>[Waiting for a revised version] Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and Journalism, with a focus on audience experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. From children’s live-action television and human-interest programs to long- and short-form documentaries and video installations, her projects. Chantal’s work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.</p>
+<p>Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and in Journalism, with a focus on audience viewer experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. Besides feature films from children’s live-action television and human-interest programs to long- and short-form documentaries and video installations, her projects, . Chantal’sshe work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.has worked across most European countries, as well as South Africa, Australia, and the United States.</p>
 <h2>RIENKJE ATTOH</h2>
 <p>[Waiting for version]<p>
 """,
@@ -358,7 +393,9 @@ Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
 Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
 </p>
 """,
-    "KATUNI": """<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
+    "KATUNI": """
+<img src="assets/KatuniLogo_PNG.png" style="width:50%;max-width:150px">
+<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
 <br>
 Haarlemmerweg 317-H<br>
 1051 LG Amsterdam<br>
