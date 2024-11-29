@@ -34,7 +34,7 @@ Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
     accent_contrast2 = "black"
     accent_contrast3 = "white"
 
-    logo_url = "https://github.com/mwinokan/RichardSites/blob/main/assets/cool_beans_logo.png?raw=true"
+    logo_url = "assets/cool_beans_logo.png"
 
     from cool_beans import ABOUT, MOVIES, TEXT_SECTIONS
 
