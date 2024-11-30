@@ -28,7 +28,7 @@ MOVIES.append(
             "CAST": "YOOTHA WONG-LOI-SING, GEORGINA VERBAAN, MAURITS DELCHOT, THOM HOFFMAN",
             "CO-PRODUCERS": "A. FILM (DENMARK), LE PACTE (FRANCE), COMET FILM (GERMANY)",
             "ANIMATION STUDIOS": "KATUNI, A. FILM",
-            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP",
+            "INT. SALES": "CINEMA MANAGEMENT GROUP",
         },
     )
 )
@@ -41,6 +41,13 @@ MOVIES.append(
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="Ainbo was born and grew up in the deepest jungle of the Amazon. One day she discovers that her homeland is being threatened by illegal and ruthless mining. Using the help of her spirit guides Vaca and Dillo she embarks on a journey to save her land and save her people before it’s too late.",
         trailer_url="https://vimeo.com/478581055",
+        awards=[
+            "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
+            "BEST ANIMATED FILM AT PLATINO AWARDS FOR IBEROAMERICAN CINEMA",
+            "NUMBER ONE DUTCH FILM WITH REGARD TO SALES TO INTERNATIONAL TERRITORIES AND INTERNATIONAL ADMISSIONS IN 2023",
+            "MORE THAN $11 MILION BOX OFFICE WORLDWIDE",
+            "MOST POPULAR DUTCH FILM ON INTERNATIONAL STREAMING PLATFORMS 2023",
+        ],
         # trailer_url="https://www.youtube.com/watch?v=VtJmptdYyEk",
         more_data={
             "YEAR / FORMAT": "2021 / 3D ANIMATION / FEATURE FILM",
@@ -50,7 +57,7 @@ MOVIES.append(
             "CAST": "LOLA RAIE, THOM HOFFMANN, NAOMI SERRANO",
             "ANIMATION STUDIOS": "KATUNI, A. FILM",
             "CO-PRODUCERS": "TUNCHE FILMS (PERU), COMET FILM (GERMANY)",
-            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
+            "INT. SALES": "CINEMA MANAGEMENT GROUP ",
         },
     )
 )
@@ -77,12 +84,12 @@ MOVIES.append(
         more_data={
             "YEAR / FORMAT": "2017 / LIVE ACTION / FEATURE FILM",
             "DIRECTED BY": "JEAN VAN DE VELDE",
-            "SCREENPLAY BY": "DOMINIC MORGAN & MATT HARVEY, JEAN VAN DE VELDE",
+            "SCREENPLAY BY": "DOMINIC MORGAN, MATT HARVEY, JEAN VAN DE VELDE",
             "BASED ON THE BOOK": "THE STATE VERSUS NELSON MANDELA BY JOEL JOFFE",
             "PRODUCED BY": "RICHARD CLAUS, MIKE AURET, HUGH ROGERS",
             "CAST": "PETER PAUL MULLER, ANTOINETTE LOUW AND SELLO MOTLOUNG",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNN-VARA (NETHERLANDS)",
-            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
+            "INT. SALES": "CINEMA MANAGEMENT GROUP ",
         },
     )
 )
@@ -93,17 +100,10 @@ MOVIES.append(
         title="THE LITTLE VAMPIRE 3D",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
-        description="""In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.
-""",
+        description="""Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.""",
         awards=[
-            "GOLDEN CALF BEST ACTOR NETHERLANDS",
-            "GOLDEN CALF BEST SCREENPLAY NETHERLANDS",
-            "WINNER AUDIENCE AWARD MILL VALLEY FILM FESTIVAL",
-            "WINNER BEST FILM UK JEWISH FILM FESTIVAL",
-            "AUDIENCE CHOICE AWARD BEST NARRATIVE FEATURE SEATTLE JEWISH FILM FESTIVAL",
-            "BEST FILM ZILVEREN KRULSTAART SCREENPLAY AWARD",
-            "BEST ACTRESS CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
-            "BEST SCRIPT CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
+            "THE NETHERLANDS' FIRST-EVER 3D ANIMATED FEATURE FILM",
+            "WORLD WIDE BOX OFFICE $ 14 MILLION",
         ],
         trailer_url="https://youtu.be/CB_-u2lMNxw",
         more_data={
@@ -114,7 +114,7 @@ MOVIES.append(
             "PRODUCED BY": "RICHARD CLAUS",
             "CAST": "JIM CARTER, RASMUS HARDIKER, ALICE KRIGE, MIRIAM MARGOLYES",
             "CO-PRODUCERS": "A. FILM (DENMARK), COMET FILM (GERMANY), KATUNI (NETHERLANDS)",
-            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
+            "INT. SALES": "CINEMA MANAGEMENT GROUP ",
         },
     )
 )
@@ -125,10 +125,9 @@ MOVIES.append(
         title="THE PRICE OF SUGAR",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
-        description="""Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.<br><br>""",
+        description="""The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>""",
         awards=[
-            "THE NETHERLANDS' FIRST-EVER 3D ANIMATED FEATURE FILM",
-            "WORLD WIDE BOX OFFICE $ 14 MILLION",
+            "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
         ],
         trailer_url="https://youtu.be/IEhbgSiT-Fo",
         more_data={
@@ -139,7 +138,7 @@ MOVIES.append(
             "PRODUCED BY": "PAUL VOORTHUYSEN, RICHARD CLAUS, MIKE AURET",
             "CAST": "YOOTHA WONG-LOI-SING, GAITE JANSEN",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNNVARA (NETHERLANDS), PV PICTURES (NETHERLANDS)",
-            "INTERNATIONAL SALES": "CINEMA MANAGEMENT GROUP ",
+            "INT. SALES": "CINEMA MANAGEMENT GROUP ",
         },
     )
 )
@@ -165,7 +164,7 @@ MOVIES.append(
             "PRODUCED BY": "FRANS VAN GESTEL, RICHARD CLAUS, ARNOLD HESLENFELD",
             "CAST": "RUTGER HAUER, REINOUT SCHOLTEN VAN ASCHAT, GIJS NABER",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), IDTV (NETHERLANDS)",
-            "INTERNATIONAL SALES": "BAVARIA INTERNATIONAL",
+            "INT. SALES": "BAVARIA INTERNATIONAL",
         },
     )
 )
@@ -201,7 +200,7 @@ MOVIES.append(
             "CAST": "CARICE VAN HOUTEN, LIAM CUNNINGHAM, RUTGER HAUER",
             "PRODUCED BY": "FRANS VAN GESTEL, RICHARD CLAUS",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), NTR (NETHERLANDS), IDTV FILMS (NETHERLANDS)",
-            "INTERNATIONAL SALES": "BAVARIA INTERNATIONAL",
+            "INT. SALES": "BAVARIA INTERNATIONAL",
         },
     )
 )
@@ -214,19 +213,20 @@ MOVIES.append(
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""Child soldiers in Africa are at the fore in this tale of a white restaurant owner in an African town bordering a conflict zone. When his son's African friend Abu is abducted, he sets out to find the boy, and walks right into a training camp exploiting children like Abu.<br><br>
 """,
-        awards="""GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)<br>
-CANNES SELECTION UN CERTAIN REGARD<br>
-WINNER BEST NARRATIVE FEATURE AT THE BLACK FILM FESTIVAL MONTREAL<br>
-""",
+        awards=[
+            "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
+            "CANNES SELECTION UN CERTAIN REGARD",
+            "WINNER BEST NARRATIVE FEATURE AT THE BLACK FILM FESTIVAL MONTREAL",
+        ],
         trailer_url="https://youtu.be/VnmKdHgS9Z4",
         more_data={
             "YEAR / FORMAT": "2008 / LIVE ACTION / FEATURE FILM ",
-            "DIRECTED BY ": "JEAN VAN DE VELDE",
-            "WRITTEN BY ": "JEAN VAN DE VELDE",
+            "DIRECTED BY": "JEAN VAN DE VELDE",
+            "WRITTEN BY": "JEAN VAN DE VELDE",
             "PRODUCED BY": "CHRIS BROUWER, RICHARD CLAUS",
             "CAST": "MARCO BORSATO, ABBY MUKIIBI NKAAGA, THEKLA REUTEN",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), THE ENTERTAINMENT GROUP (NETHERLANDS)",
-            "INTERNATIONAL SALES": "WILD BUNCH",
+            "INT. SALES": "WILD BUNCH",
         },
     )
 )
@@ -249,7 +249,7 @@ MOVIES.append(
             "PRODUCED BY": "RICHARD CLAUS",
             "CAST": "AARON TAYLOR-JOHNSON, JIM CARTER, VANESSA REDGRAVE, GEORGE MACKAY, CAROLINE GOODALL",
             "CO-PRODUCERS": "DELUX PRODUCTIONS (LUXEMBOURG), WARNER BROS (UK/GERMANY), 20TH CENTURY FOX (US)",
-            "INTERNATIONAL SALES": "ARCLIGHT",
+            "INT. SALES": "ARCLIGHT",
         },
     )
 )
@@ -262,9 +262,10 @@ MOVIES.append(
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""A lonely American boy living in Scotland makes a new best friend, a fellow nine-year-old who happens to be a vampire..<br><br>
 """,
-        awards="""GERMAN FILM AWARD GOLD BEST FAMILY FILM<br>
-WORLD WIDE BOX OFFICE $ 28 MILLION<br>
-""",
+        awards=[
+            "GERMAN FILM AWARD GOLD BEST FAMILY FILM",
+            "WORLD WIDE BOX OFFICE $ 28 MILLION",
+        ],
         trailer_url="https://youtu.be/HRHWVeVFVf8",
         more_data={
             "YEAR / FORMAT": "2000 / LIVE ACTION / FEATURE FILM ",
@@ -274,7 +275,7 @@ WORLD WIDE BOX OFFICE $ 28 MILLION<br>
             "BASED ON ": "THE LITTLE VAMPIRE NOVELS BY ANGELA SOMMER-BODENBURG",
             "CAST": "JONATHAN LIPNICKI, JIM CARTER, RICHARD E. GRANT, ROLLO WEEKS, ALICE KRIGE, ANNA POPPLEWELL",
             "CO-PRODUCERS": "NEW LINE CINEMA (US), WARNER BROS. (GERMANY), METROPOLITAN FILMS (FRANCE)",
-            "INTERNATIONAL SALES": "COMETSTONE INTERNATIONAL",
+            "INT. SALES": "COMETSTONE INTERNATIONAL",
         },
     )
 )
@@ -287,19 +288,20 @@ MOVIES.append(
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""An American man unwittingly gets involved with French werewolves who have developed a serum allowing them to transform at will.<br><br>
 """,
-        awards="""US BOX-OFFICE $27 MILLION<br>
-WINNER GRAND PRIZE, FUN TROPHY AND AUDIENCE AWARD GÉRARDMER FILM FESTIVAL FRANCE<br>
-""",
-        trailer_url="https://youtu.be/VnmKdHgS9Z4",
+        awards=[
+            "US BOX-OFFICE $27 MILLION",
+            "WINNER GRAND PRIZE, FUN TROPHY AND AUDIENCE AWARD GÉRARDMER FILM FESTIVAL FRANCE",
+        ],
+        trailer_url="https://www.youtube.com/watch?v=xmoKnjj7Y38",
         more_data={
-            "YEAR / FORMAT": "1994 / LIVE ACTION / FEATURE FILM ",
-            "DIRECTED BY ": "ANTHONY WALLER",
-            "WRITTEN BY ": "ANTHONY WALLER",
-            "PRODUCED BY": "ALEXANDER BUCHMAN, NORBERT SOENTGEN",
-            "EXECUTIVE PRODUCED BY": "RICHARD CLAUS",
-            "CAST": "MARINA ZUDINA, ALEC GUINNES, FAY RIPLEY, EVAN RICHARDS",
-            "CO-PRODUCERS": "SONY CLASSICS (US), COMET FILM/COBBLESTONE PICTURES (GERMANY) ",
-            "INTERNATIONAL SALES": "J&M ENTERTAINMENT",
+            "YEAR / FORMAT": "1997 / LIVE ACTION / FEATURE FILM ",
+            "DIRECTED BY": "ANTHONY WALLER  ",
+            "SCREENPLAY BY": "TIM BURNS, TOM STERN, ANTHONY WALLER    ",
+            "BASED ON": "CHARACTERS CREATED BY JOHN LANDIS",
+            "CAST": "TOM EVERETT SCOTT, JULIE DELPY, VINCE VIELUF, JULIE BOWEN",
+            "PRODUCED BY": "RICHARD CLAUS",
+            "CO-PRODUCERS": "THE WALT DISNEY COMPANY (US), COMET FILM (GERMANY), DELUX PRODUCTIONS (LUXEMBOURG)",
+            "INT. SALES": "J&M INTERNATIONAL",
         },
     )
 )
@@ -311,10 +313,11 @@ MOVIES.append(
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""An American man unwittingly gets involved with French werewolves who have developed a serum allowing them to transform at will.<br><br>""",
-        awards="""OFFICIAL SELECTION SUNDANCE<br>
-CANNES DIRECTOR’S FORTNIGHT<br>
-WINNER SPECIAL JURY PRICE GÉRARDMER FILM FESTIVAL FRANCE<br>
-""",
+        awards=[
+            "OFFICIAL SELECTION SUNDANCE",
+            "CANNES DIRECTOR’S FORTNIGHT",
+            "WINNER SPECIAL JURY PRICE GÉRARDMER FILM FESTIVAL FRANCE",
+        ],
         trailer_url="https://youtu.be/Ss5Hw3uiArs",
         more_data={
             "YEAR / FORMAT": "1994 / LIVE ACTION / FEATURE FILM ",
@@ -324,7 +327,7 @@ WINNER SPECIAL JURY PRICE GÉRARDMER FILM FESTIVAL FRANCE<br>
             "EXECUTIVE PRODUCED BY": "RICHARD CLAUS",
             "CAST": "MARINA ZUDINA, ALEC GUINNES, FAY RIPLEY, EVAN RICHARDS",
             "CO-PRODUCERS": "SONY CLASSICS (US), COMET FILM/COBBLESTONE PICTURES (GERMANY) ",
-            "INTERNATIONAL SALES": "J&M ENTERTAINMENT",
+            "INT. SALES": "J&M ENTERTAINMENT",
         },
     )
 )
@@ -405,4 +408,71 @@ Richard: <a href="mailto:rc@coolbeanspix.com">rc@coolbeanspix.com</a><br>
 Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>
 </p>
 """,
+}
+
+###
+
+IMDB_LINKS = {
+    "MIRIAM MARGOLYES": "https://www.imdb.com/name/nm0546816",
+    "NORBERT SOENTGEN": "https://www.imdb.com/name/nm0812105",
+    "NAOMI SERRANO": "https://www.imdb.com/name/nm10259997",
+    "CHANTAL NISSEN": "https://www.imdb.com/name/nm3900212",
+    "RASMUS HARDIKER": "https://www.imdb.com/name/nm1727356",
+    "ANNA POPPLEWELL": "https://www.imdb.com/name/nm0691600",
+    "RICHARD CLAUS": "https://www.imdb.com/name/nm0165290",
+    "MAARTEN TREURNIET": "https://www.imdb.com/name/nm0872328",
+    "AARON TAYLOR-JOHNSON": "https://www.imdb.com/name/nm1093951",
+    "THOM HOFFMAN": "https://www.imdb.com/name/nm0389109",
+    "ANTHONY WALLER": "https://www.imdb.com/name/nm0909026",
+    "JULIE DELPY": "https://www.imdb.com/name/nm0000365",
+    "JULIE BOWEN": "https://www.imdb.com/name/nm0100866",
+    "ALICE KRIGE": "https://www.imdb.com/name/nm0000481",
+    "MAURITS DELCHOT": "https://www.imdb.com/name/nm2009096",
+    "GEORGE MACKAY": "https://www.imdb.com/name/nm1126657",
+    "VINCE VIELUF": "https://www.imdb.com/name/nm0896735",
+    "CHRIS BROUWER": "https://www.imdb.com/name/nm0112817",
+    "TOM STERN": "https://www.imdb.com/name/nm0827868",
+    "TIM BURNS": "https://www.imdb.com/name/nm0122899",
+    "MARCO BORSATO": "https://www.imdb.com/name/nm0097441",
+    "GIJS NABER": "https://www.imdb.com/name/nm0618574",
+    "CÉSAR ZELADA": "https://www.imdb.com/name/nm8813915",
+    "THEKLA REUTEN": "https://www.imdb.com/name/nm0720671",
+    "FRANS VAN GESTEL": "https://www.imdb.com/name/nm0315180",
+    "TOM EVERETT SCOTT": "https://www.imdb.com/name/nm0779866",
+    "GAITE JANSEN": "https://www.imdb.com/name/nm3130060",
+    "CARICE VAN HOUTEN": "https://www.imdb.com/name/nm0396924",
+    "JONATHAN LIPNICKI": "https://www.imdb.com/name/nm0005151",
+    "ROLLO WEEKS": "https://www.imdb.com/name/nm0917353",
+    "ALEC GUINNES": "https://www.imdb.com/name/nm0000027",
+    "ABBY MUKIIBI NKAAGA": "https://www.imdb.com/name/nm1880270",
+    "SERGIO ZELADA": "https://www.imdb.com/name/nm8813916",
+    "PETER PAUL MULLER": "https://www.imdb.com/name/nm0612223",
+    "CAROLINE GOODALL": "https://www.imdb.com/name/nm0328751",
+    "ALEXANDER BUCHMAN": "https://www.imdb.com/name/nm0118212",
+    "VANESSA REDGRAVE": "https://www.imdb.com/name/nm0000603",
+    "YOOTHA WONG-LOI-SING": "https://www.imdb.com/name/nm5493937",
+    "JIM CARTER": "https://www.imdb.com/name/nm0141697",
+    "GEORGINA VERBAAN": "https://www.imdb.com/name/nm0893620",
+    "HUGH ROGERS": "https://www.imdb.com/name/nm8403654",
+    "LIAM CUNNINGHAM": "https://www.imdb.com/name/nm0192377",
+    "MARINA ZUDINA": "https://www.imdb.com/name/nm0958461",
+    "LOLA RAIE": "https://www.imdb.com/name/nm6952869",
+    # 'ROBERT SPRACKLING': "",
+    "PAULA VAN DER OEST": "https://www.imdb.com/name/nm0644309",
+    "DOMINIC MORGAN": "https://www.imdb.com/name/nm2788920",
+    "MATT HARVEY": "https://www.imdb.com/name/nm2791452",
+    "ARNOLD HESLENFELD": "https://www.imdb.com/name/nm0381395",
+    "JEAN VAN DE VELDE": "https://www.imdb.com/name/nm0892400",
+    "REINOUT SCHOLTEN VAN ASCHAT": "https://www.imdb.com/name/nm2131930",
+    "MIKE AURET": "https://www.imdb.com/name/nm2934638",
+    "PAUL VOORTHUYSEN": "https://www.imdb.com/name/nm0903409",
+    "RICHARD E. GRANT": "https://www.imdb.com/name/nm0001290",
+    "RUTGER HAUER": "https://www.imdb.com/name/nm0000442",
+    "FAY RIPLEY": "https://www.imdb.com/name/nm0728004",
+    "KARSTEN KIILERICH": "https://www.imdb.com/name/nm0478172",
+    "LARRY WILSON": "https://www.imdb.com/name/nm0933733",
+    "EVAN RICHARDS": "https://www.imdb.com/name/nm0724084",
+    "ANTOINETTE LOUW": "https://www.imdb.com/name/nm1943777",
+    "SELLO MOTLOUNG": "https://www.imdb.com/name/nm0609382",
+    "THOM HOFFMANN": "https://www.imdb.com/name/nm0389109",
 }

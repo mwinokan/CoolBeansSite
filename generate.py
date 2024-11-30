@@ -36,7 +36,7 @@ Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
 
     logo_url = "assets/cool_beans_logo.png"
 
-    from cool_beans import ABOUT, MOVIES, TEXT_SECTIONS
+    from cool_beans import ABOUT, MOVIES, TEXT_SECTIONS, IMDB_LINKS
 
     movies = MOVIES
 
@@ -56,7 +56,8 @@ Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
         title,
         text_buffer,
         movies,
-        text_sections=TEXT_SECTIONS
+        link_lookup=IMDB_LINKS,
+        text_sections=TEXT_SECTIONS,
     )
 
     write_buffer(html_buffer)
@@ -79,17 +80,18 @@ def create_site(
     slideshow_auto=False,
     slideshow_rate=5,
     text_sections=None,
+    link_lookup=None,
 ):
 
     navigation_targets = {
-        "about":f"About {title}",
-        "productions":"Productions",
+        "about": f"About {title}",
+        "productions": "Productions",
     }
 
     if text_sections:
         new_sections = {}
         for section_title, content in text_sections.items():
-            safe_title = section_title.replace(" ", "_").replace("&","and").lower()
+            safe_title = section_title.replace(" ", "_").replace("&", "and").lower()
             navigation_targets[safe_title] = section_title
             new_sections[safe_title] = (section_title, content)
 
@@ -140,14 +142,14 @@ def create_site(
     # Navigation dropdown
     html_buffer += '<div class="w3-dropdown-hover">\n'
     html_buffer += '<button class="w3-xlarge w3-button w3-white">&#9776;\n'
-    html_buffer += '</button>\n'
+    html_buffer += "</button>\n"
     html_buffer += f'<div id="demo" class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color:{accent_color3};color:{accent_contrast3}">\n'
 
     for target, text in navigation_targets.items():
         html_buffer += f'<a href="#{target}" class="w3-bar-item w3-button">{text}</a>\n'
 
-    html_buffer += '</div>\n'
-    html_buffer += '</div>\n'
+    html_buffer += "</div>\n"
+    html_buffer += "</div>\n"
     html_buffer += "</div>\n"
 
     html_buffer += "</div>\n"
@@ -241,8 +243,8 @@ def create_site(
     # text content
     html_buffer += '<div class="w3-content" style="max-width:800px">\n'
     html_buffer += '<div class="w3-container w3-padding-large">\n'
-    html_buffer += '<div id="about" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
-    html_buffer += f'<h2>About {title}</h2>\n'
+    html_buffer += '<div id="about" style="height: 100px; margin-top: -100px;"></div>'  ## offset hyperlink target
+    html_buffer += f"<h2>About {title}</h2>\n"
     html_buffer += "<p>\n"
 
     html_buffer += text_buffer
@@ -273,8 +275,8 @@ def create_site(
     html_buffer += "<br>\n"
     html_buffer += "<br>\n"
     html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
-    html_buffer += '<div id="productions" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
-    html_buffer += '<h2>Productions</h2>\n'
+    html_buffer += '<div id="productions" style="height: 100px; margin-top: -100px;"></div>'  ## offset hyperlink target
+    html_buffer += "<h2>Productions</h2>\n"
     html_buffer += "</div>\n"
     html_buffer += "<br>\n"
 
@@ -287,6 +289,8 @@ def create_site(
     subset = [d for d in movies if d.has_poster]
     print(f"#movies w/ poster_url = {len(subset)}")
     assert len(subset) > 0
+
+    names = set()
 
     start = 0
     end = len(subset)
@@ -309,15 +313,17 @@ def create_site(
             # info panel
             html_buffer += f'<div class="w3-container">\n'
             html_buffer += f"<h2>{d.title}</h2>\n"
-                        
+
             html_buffer += f"<p>{d.description}\n"
             # if d.more_data:
-                # html_buffer += f'<i id="show_{d.name}" class="fa fa-plus" style="color:{accent_color1}" onclick="showDetail(\'{d.name}\')"></i>\n'
+            # html_buffer += f'<i id="show_{d.name}" class="fa fa-plus" style="color:{accent_color1}" onclick="showDetail(\'{d.name}\')"></i>\n'
             html_buffer += "</p>\n"
 
             awards_table = ""
             if d.awards:
-                awards_table += "<table>\n"
+                # awards_table += "<table>\n"
+                awards_table += '<table style="border-spacing: 10px 0">\n'
+
                 for text in d.awards:
                     awards_table += "<tr>\n"
                     awards_table += "<td>\n"
@@ -333,17 +339,35 @@ def create_site(
             # more info panel
             if d.more_data:
                 # html_buffer += f'<div id="{d.name}_detail" style="display:none">\n'
-                
+
                 more_buffer = ""
 
                 if isinstance(d.more_data, dict):
-                    more_buffer += "<table>\n"
+                    more_buffer += (
+                        # '<table class="w3-table" style="border-spacing: 10px 0">\n'
+                        '<table style="border-spacing: 10px 0">\n'
+                    )
                     for cells in d.more_data.items():
                         more_buffer += "<tr>\n"
-                        for i,cell in enumerate(cells):
+
+                        # if cells[0] in [
+                        #     "DIRECTED BY",
+                        #     "STORY BY",
+                        #     "SCREENPLAY BY",
+                        #     "PRODUCED BY",
+                        #     "CAST",
+                        # ]:
+                        #     for name in cells[1].split(", "):
+                        #         names.add(name)
+
+                        for i, cell in enumerate(cells):
                             more_buffer += "<td>\n"
                             if i == 0:
                                 more_buffer += "<strong>\n"
+
+                            if i == 1:
+                                cell = add_links(cell, link_lookup)
+
                             more_buffer += cell
                             if i == 0:
                                 more_buffer += "</strong>\n"
@@ -353,19 +377,19 @@ def create_site(
                     # html_buffer += more_buffer
 
                 # else:
-                    # more_buffer = f"<p>{d.more_data}\n"
-                    # html_buffer += f"<p>{d.more_data}\n"
-                    # html_buffer += "</p>\n"
+                # more_buffer = f"<p>{d.more_data}\n"
+                # html_buffer += f"<p>{d.more_data}\n"
+                # html_buffer += "</p>\n"
 
                 # html_buffer += f'<i class="fa fa-close" style="color:{accent_color1}" onclick="hideDetail(\'{d.name}\')"></i>\n'
                 # html_buffer += "</div>\n"
 
             # html_buffer += f'<div class="w3-center">\n'
             # if d.imdb_url:
-                # html_buffer += f'<a href="{d.imdb_url}" class="w3-btn w3-hover-opacity w3-text-white" style="background-color:{accent_color1};"><strong>IMDb</strong></a>\n'
+            # html_buffer += f'<a href="{d.imdb_url}" class="w3-btn w3-hover-opacity w3-text-white" style="background-color:{accent_color1};"><strong>IMDb</strong></a>\n'
             # if d.trailer_url:
-                # html_buffer += f'<button class="w3-btn w3-hover-opacity w3-text-white" onclick="document.getElementById(\'{d.name}_trailer\').style.display=\'block\'" style="background-color:{accent_color1};"><strong>Trailer</strong></button>'
-                # html_buffer += f'<a href="{d.trailer_url}" class="w3-btn w3-hover-opacity w3-text-white" style="background-color:{accent_color1};"><strong>Trailer</strong></a>\n'
+            # html_buffer += f'<button class="w3-btn w3-hover-opacity w3-text-white" onclick="document.getElementById(\'{d.name}_trailer\').style.display=\'block\'" style="background-color:{accent_color1};"><strong>Trailer</strong></button>'
+            # html_buffer += f'<a href="{d.trailer_url}" class="w3-btn w3-hover-opacity w3-text-white" style="background-color:{accent_color1};"><strong>Trailer</strong></a>\n'
             # html_buffer += "</div>\n"
             html_buffer += "</div>\n"
             html_buffer += "</div>\n"
@@ -401,6 +425,8 @@ def create_site(
 
         html_buffer += "</div>\n"
 
+    # print(names)
+
     html_buffer += "</div>\n"
     html_buffer += "</div>\n"
 
@@ -424,11 +450,11 @@ def create_site(
             html_buffer += "<br>\n"
             html_buffer += "<br>\n"
             html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
-            html_buffer += f'<div id="{safe_title}" style="height: 100px; margin-top: -100px;"></div>' ## offset hyperlink target
-            html_buffer += f'<h2>{section_title}</h2>\n'
+            html_buffer += f'<div id="{safe_title}" style="height: 100px; margin-top: -100px;"></div>'  ## offset hyperlink target
+            html_buffer += f"<h2>{section_title}</h2>\n"
             html_buffer += "</div>\n"
             html_buffer += "<br>\n"
-            
+
             html_buffer += f'<div class="w3-content w3-padding-large" style="max-width:800px">{content}</div>\n'
 
     # end body
@@ -436,148 +462,36 @@ def create_site(
 
     # footer
     html_buffer += f'<footer class="w3-container" style="padding:32px;background-color:{accent_color1}">\n'
-    html_buffer += '<div class="w3-center w3-text-white">\n'
+
+    # html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1}">\n'
+    html_buffer += f'<div class="w3-content w3-text-white w3-padding-large" style="max-width:800px">\n'
+    # html_buffer += '<div class="w3-center w3-text-white">\n'
+
+    html_buffer += '<table class="w3-table">\n'
+    html_buffer += "<tr>\n"
+
+    html_buffer += '<td style="text-align:center;vertical-align:middle">\n'
     html_buffer += f'<p style="color:{accent_color2}"><strong>{title}</strong></p>\n'
     html_buffer += f"<p>{address}</p>\n"
     html_buffer += f"<p>{contact}</p>\n"
-    html_buffer += f'</ul><a href="#" class="w3-button w3-padding w3-margin-bottom" style="background-color:{accent_color1};color:{accent_color3}"><i class="fa fa-arrow-up w3-margin-right"></i>Back to top</a>\n'
+    html_buffer += f'<a href="#" class="w3-button w3-padding w3-margin-bottom" style="background-color:{accent_color1};color:{accent_color3}"><i class="fa fa-arrow-up w3-margin-right"></i>Back to top</a>\n'
+    html_buffer += "</td>\n"
+
+    html_buffer += '<td style="text-align:center;vertical-align:middle">\n'
+    html_buffer += f'<img src="assets/EU flag-Crea EU + MEDIA_neg [White] EN.png" alt="Creative Europe Logo" style="width:100%;max-width:200px">\n'
+    # html_buffer += f'<img src="assets/EU flag-Crea EU + MEDIA_neg EN.png" alt="Creative Europe Logo" style="width:100%;max-width:200px">\n'
+    html_buffer += "<br>\n"
+    html_buffer += "<br>\n"
+    html_buffer += "</td>\n"
+
+    html_buffer += "</tr>\n"
+    html_buffer += "</table>\n"
+
     html_buffer += "</div>\n"
     html_buffer += "</footer>\n"
     html_buffer += "</html>\n"
 
     return html_buffer
-
-
-def make_movie_data():
-    # data
-    movies = []
-    movies.append(
-        Movie(
-            "ainbo",
-            "AINBO - Spirit of the Amazon",
-            2021,
-            "https://www.imdb.com/title/tt6570098/",
-            "Ainbo was born and grew up in the deepest jungle of the Amazon. One day she discovers that her homeland is being threatened by illegal and ruthless mining. Using the help of her spirit guides Vaca and Dillo she embarks on a journey to save her land and save her people before it’s too late.",
-            "https://www.youtube.com/watch?v=VtJmptdYyEk",
-            more_data="""
-        <strong>Directors</strong>: José Zelada, Richard Claus. <br>
-        <strong>Screenwriters</strong>: Brian Cleveland, Jason Cleveland, Richard Claus, Larry Wilson. <br>
-        <strong>Cast</strong>: tba. <br>
-        <strong>Country</strong>: NL/US/PE. <br>
-        <strong>Co-producers</strong>: Tunche Films (PE), CMG (US), Epic (PE). <br>
-        <strong>Status</strong>: production. <br>
-        <strong>Sort</strong>: feature-length animation. <br>
-        <strong>Duration</strong>: 84 min. Genre</strong>: adventure, children. <br>
-        <strong>Distribution/Sales</strong>: Cinema Management Group.<br>
-        """,
-        )
-    )
-
-    movies.append(
-        Movie(
-            "panda",
-            "Panda Bear in Africa",
-            2023,
-            "https://www.imdb.com/title/tt13616980/",
-            "A fun and adventurous young Panda travels from China to Africa to rescue his best friend, Jielong the Dragon, who has been kidnapped. On his journey he discovers a world completely unknown to him and faces frightening hippos, suspicious hyenas and wise gorillas. Relying on his wits (and some new found friends) he makes his way across Africa, before rescuing Jielong and saving his new friends' jungle home. A family entertainment comedy, a fish out of water/coming of age story.",
-            more_data="""
-        <strong>Director</strong>: Richard Claus & Karsten Kiilerich. <br>
-        <strong>Screenwriters</strong>: Robert Sprackling, Richard Claus & Karsten Kiilerich. <br>
-        <strong>Cast</strong>: tbd. <br>
-        <strong>Co-production countries</strong>: NL/DK/DE/FR. <br>
-        <strong>Co-producers</strong>: A. Film (DK), Comet Film (DE), Le Pacte (FR). <br>
-        <strong>Status</strong>: In development/pre-production. <br>
-        <strong>Release</strong>: 2023. <br>
-        <strong>Sort</strong>: feature-length 3D animation. <br>
-        <strong>Duration</strong>: 88 min. <br>
-        <strong>Genre</strong>: Family Entertainment, Comedy. <br>
-        <strong>International Sales</strong>: CMG Cinema Management Group <br>
-        """,
-        )
-    )
-    movies.append(
-        Movie(
-            "bram",
-            "Bram Fischer",
-            2017,
-            "https://www.imdb.com/title/tt6002522",
-            "In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.",
-            "https://www.youtube.com/watch?v=uRNEaoX-SKQ",
-        )
-    )
-    movies.append(
-        Movie(
-            "vampire",
-            "The Little Vampire 3D",
-            2017,
-            "https://www.imdb.com/title/tt4729560",
-            "Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.",
-            "https://www.youtube.com/watch?v=IUDGUmJir50",
-        )
-    )
-    movies.append(
-        Movie(
-            "sugar",
-            "Price of Sugar",
-            2013,
-            "https://www.imdb.com/title/tt2691498",
-            "The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.",
-            "https://www.youtube.com/watch?v=js-lnZG74QA",
-        )
-    )
-    movies.append(
-        Movie(
-            "butterflies",
-            "Black Butterflies",
-            2011,
-            "https://www.imdb.com/title/tt0906778",
-            "In Apartheid-torn South Africa, poet Ingrid Jonker (Carice van Houten) struggles tragically in search of love and a sense of home.",
-            "https://www.youtube.com/watch?v=Fr-Op9-HZhA",
-        )
-    )
-    movies.append(
-        Movie(
-            "thief",
-            "The Thief Lord",
-            2006,
-            "https://www.imdb.com/title/tt0430674",
-            'After their mother dies, two boys flee their mean aunt and head for Venice, Italy, where they meet Scipio, the mysterious "Thief Lord." Along with a small gang of abandoned kids, the boys start robbing the rich to support themselves.',
-            "https://youtu.be/KFQvMHUU3ko",
-        )
-    )
-    movies.append(
-        Movie(
-            "heineken",
-            "De Heineken Ontvoering",
-            2015,
-            "https://www.imdb.com/title/tt2917388",
-            'The inside story of the planning, execution, rousing aftermath, and ultimate downfall of the kidnappers of beer tycoon Alfred "Freddy" Heineken in 1983, which resulted in the largest ransom ever paid for an individual.',
-            "https://youtu.be/LttABogMVPw",
-        )
-    )
-    movies.append(
-        Movie(
-            "vampire2000",
-            "The Little Vampire",
-            2000,
-            "https://www.imdb.com/title/tt0192255",
-            "A lonely American boy living in Scotland makes a new best friend, a fellow nine year-old who happens to be a vampire."
-            "https://youtu.be/HRHWVeVFVf8",
-        )
-    )
-    movies.append(
-        Movie(
-            "witness",
-            "Mute Witness",
-            1995,
-            "https://www.imdb.com/title/tt0110604",
-            "A mute make-up artist working on a slasher movie being shot in Moscow, is locked in the studio after hours. While there, she witnesses a brutal murder, and must escape capture.",
-            "https://youtu.be/Ss5Hw3uiArs",
-        )
-    )
-    movies = sorted(movies, key=lambda x: x.year, reverse=True)
-    print(f"#movies = {len(movies)}")
-    return movies
 
 
 def write_buffer(html_buffer, subdir=None):
@@ -596,6 +510,14 @@ def push_changes():
     os.system(
         f'git add *.py assets/* */index.html; git commit -m "auto-generated"; git push'
     )
+
+
+def add_links(text, lookup):
+    for name in lookup:
+        if name in text:
+            link = lookup[name]
+            text = text.replace(name, f'<a href="{link}">{name}</a>')
+    return text
 
 
 if __name__ == "__main__":
