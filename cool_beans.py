@@ -393,7 +393,7 @@ Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
     "SO & SO PRODUCTIONS": """<p>So & So is a boutique London based company developing Film and TV. Founded by Rienkje Attoh, it thrives on her passion for telling bold and untold narratives, while showcasing and supporting new talent. In development is an untitled biopic about Queen Victoria’s God daughter, Sarah Forbes Bonetta with SunnyMarsh (Benedict Cumberbatch) and Edith’s Daughter (Cynthia Erivo), and a fantasy series about the Warrior Queen Mother of the Ashanti Empire, Yaa Asantewaa, co-created with Home Team’s Bennett McGhee, with writer Kara Smith and Universal International Studios. She is also reuniting with writer/director Shola Amoo, on his third feature, Floored. </p>
 <p><strong>SO & SO PRODUCTIONS</strong><br>
 <br>
-Rienkje: <a href="mailto:ra@coolbeanspix.com">ra@coolbeanspix.com</a>
+Rienkje: <a href="mailto:info@soandsoprod.com">info@soandsoprod.com</a>
 </p>
 """,
     "KATUNI": """
