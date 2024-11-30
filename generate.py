@@ -257,15 +257,20 @@ def create_site(
     html_buffer += '<div class="w3-content" style="max-width:600px">\n'
     html_buffer += '<div class="w3-cell-row">\n'
     html_buffer += '<div class="w3-container w3-cell w3-center">\n'
-    html_buffer += '<img src="https://github.com/mwinokan/RichardSites/blob/main/assets/Richard_Claus_1.jpg?raw=true" alt="Richard_Claus_1" style="width:100%;max-width:200px" class="w3-padding">\n'
+    html_buffer += '<img src="assets/Richard_Claus_1.jpg" alt="Richard_Claus_1" style="width:100%;max-width:200px" class="w3-padding">\n'
     html_buffer += '<h4 style="color:black">Richard Claus</h4>\n'
     # html_buffer += '<p>+31 (0) 650281410\n'
     html_buffer += "<p>rc@coolbeanspix.com</p>\n"
     html_buffer += "</div>\n"
     html_buffer += '<div class="w3-container w3-cell w3-center">\n'
-    html_buffer += '<img src="https://github.com/mwinokan/RichardSites/blob/main/assets/Chantal_Nissen.jpg?raw=true" alt="Chantal_Nissen" style="width:100%;max-width:200px" class="w3-padding">\n'
+    html_buffer += '<img src="assets/Chantal_Nissen.jpg" alt="Chantal_Nissen" style="width:100%;max-width:200px" class="w3-padding">\n'
     html_buffer += '<h4 style="color:black">Chantal Nissen</h4>\n'
     html_buffer += "<p>cn@coolbeanspix.com</p>\n"
+    html_buffer += "</div>\n"
+    html_buffer += '<div class="w3-container w3-cell w3-center">\n'
+    html_buffer += '<img src="assets/rienkje.jpg" alt="Rienkje Attoh" style="width:100%;max-width:200px" class="w3-padding">\n'
+    html_buffer += '<h4 style="color:black">Rienkje Attoh</h4>\n'
+    html_buffer += "<p>ra@coolbeanspix.com</p>\n"
     html_buffer += "</div>\n"
     html_buffer += "</div>\n"
     html_buffer += "</div>\n"
