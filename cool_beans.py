@@ -312,7 +312,7 @@ MOVIES.append(
         title="MUTE WITNESS",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
-        description="""An American man unwittingly gets involved with French werewolves who have developed a serum allowing them to transform at will.<br><br>""",
+        description="""A mute make-up artist working on a slasher movie being shot in Moscow, is locked in the studio after hours. While there, she witnesses a brutal murder, and must escape capture.<br><br>""",
         awards=[
             "OFFICIAL SELECTION SUNDANCE",
             "CANNES DIRECTOR’S FORTNIGHT",

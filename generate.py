@@ -11,7 +11,7 @@ def main():
     cool_beans()
     # katuni(movies)
 
-    # push_changes()
+    add_changes()
 
 
 def cool_beans():
@@ -514,6 +514,14 @@ def push_changes():
 
     os.system(
         f'git add *.py assets/* */index.html; git commit -m "auto-generated"; git push'
+    )
+
+def add_changes():
+    print(f"add_changes()")
+    import os
+
+    os.system(
+        f'git add *.py assets/* index.html'
     )
 
 
