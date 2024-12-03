@@ -214,8 +214,10 @@ def create_site(
     html_buffer += f'<div class="w3-content w3-display-container w3-dark-grey" style="width:100%;max-width:{max_width}px">\n'
 
     for d in subset:
-        html_buffer += '<div class="w3-display-container mySlides w3-center" style="width:100%;max-height:800px"> \n'
-        html_buffer += f'<img src="{d.screencap_url}" onclick="document.getElementById(\'{d.name}_modal\').style.display=\'block\'" style="object-fit:contain;background-color:white;width:100%;max-height:800px">\n'
+        # html_buffer += '<div class="w3-display-container mySlides w3-center" style="width:100%;max-height:800px"> \n'
+        html_buffer += '<div class="w3-display-container mySlides w3-center" style="width:100%;max-height:1200px"> \n'
+        # html_buffer += f'<img src="{d.screencap_url}" onclick="document.getElementById(\'{d.name}_modal\').style.display=\'block\'" style="object-fit:contain;background-color:white;width:100%;max-height:800px">\n'
+        html_buffer += f'<img src="{d.screencap_url}" onclick="document.getElementById(\'{d.name}_modal\').style.display=\'block\'" style="object-fit:contain;background-color:white;width:100%;max-height:1200px">\n'
         # html_buffer += f'<div class="w3-padding w3-display-bottomleft w3-text-white"><h3>{d.title}</h3></div>\n'
         html_buffer += f"<div class=\"overlay overlay-round-box w3-button\" onclick=\"document.getElementById('{d.name}_modal').style.display='block'\"><h4>{d.title}</h4></div>\n"
         html_buffer += "</div>\n"
