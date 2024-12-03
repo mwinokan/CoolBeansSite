@@ -13,10 +13,13 @@ MOVIES.append(
         description="""A fun and adventurous young Panda travels from China to Africa to rescue his best friend, Jielong the Dragon, who has been kidnapped. A fish-out of water comedy, a coming of age story.
 """,
         awards=[
-            "BEST FAMILY FILM AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN",
-            "OFFICIAL SELECTION STUTTGART INTERNATIONAL FESTIVAL OF ANIMATED FILM",
-            "OFFICIAL SELECTION ANNECY FESTIVAL 2024",
             "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
+            "BEST FAMILY FILM AT THE GERMAN FILMFESTIVAL IN LUDWIGSHAVEN AM RHEIN",
+            "IN COMPETITION STUTTGART INTERNATIONAL FESTIVAL OF ANIMATED FILM",
+            "OFFICIAL SELECTION ANNECY FESTIVAL 2024",
+            "IN COMPETITION TALLINN BLACK NIGHTS FILM FESTIVAL 2024",
+            "IN COMPETITION CINEKID FESTIVAL 2024",
+            "OFFICIAL SELECTION RED SEA FILM FESTIVAL 2024",
         ],
         trailer_url="https://youtu.be/_VJ2A1iFnGk",
         more_data={
@@ -44,7 +47,7 @@ MOVIES.append(
         awards=[
             "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
             "BEST ANIMATED FILM AT PLATINO AWARDS FOR IBEROAMERICAN CINEMA",
-            "NUMBER ONE DUTCH FILM WITH REGARD TO SALES TO INTERNATIONAL TERRITORIES AND INTERNATIONAL ADMISSIONS IN 2023",
+            "NUMBER ONE DUTCH FILM WITH SALES TO INTERNATIONAL TERRITORIES AND INTERNATIONAL ADMISSIONS IN 2023",
             "MORE THAN $11 MILION BOX OFFICE WORLDWIDE",
             "MOST POPULAR DUTCH FILM ON INTERNATIONAL STREAMING PLATFORMS 2023",
         ],
@@ -54,7 +57,7 @@ MOVIES.append(
             "DIRECTED BY": "JOSÉ ZELADA, RICHARD CLAUS ",
             "WRITTEN BY": "BRIAN CLEVELAND & JASON CLEVELAND, LARRY WILSON, RICHARD CLAUS",
             "PRODUCED BY": "RICHARD CLAUS, CÉSAR ZELADA, JOSÉ ZELADA, SERGIO ZELADA",
-            "CAST": "LOLA RAIE, THOM HOFFMANN, NAOMI SERRANO",
+            "CAST": "LOLA RAIE, THOM HOFFMAN, NAOMI SERRANO",
             "ANIMATION STUDIOS": "KATUNI, A. FILM",
             "CO-PRODUCERS": "TUNCHE FILMS (PERU), COMET FILM (GERMANY)",
             "INT. SALES": "CINEMA MANAGEMENT GROUP ",
@@ -71,23 +74,23 @@ MOVIES.append(
         description="""In apartheid-ruled South Africa, a renowned lawyer struggles to hide his secret affiliation to the nation's chief resistance movement - as he takes on defending a group of its arrested members, including its leader, Nelson Mandela.
 """,
         awards=[
-            "GOLDEN CALF BEST ACTOR NETHERLANDS",
-            "GOLDEN CALF BEST SCREENPLAY NETHERLANDS",
+            "BEST ACTOR PETER PAUL MULLER AT NETHERLANDS GOLDEN CALF AWARDS",
+            "BEST SCREENPLAY AT NETHERLANDS GOLDEN CALF AWARDS",
             "WINNER AUDIENCE AWARD MILL VALLEY FILM FESTIVAL",
             "WINNER BEST FILM UK JEWISH FILM FESTIVAL",
             "AUDIENCE CHOICE AWARD BEST NARRATIVE FEATURE SEATTLE JEWISH FILM FESTIVAL",
             "BEST FILM ZILVEREN KRULSTAART SCREENPLAY AWARD",
-            "BEST ACTRESS CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
+            "BEST ACTRESS ANTOINETTE LOUW CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL",
             "BEST SCRIPT CAPE TOWN & WINELANDS INTERNATIONAL FILM FESTIVAL ",
         ],
         trailer_url="https://youtu.be/uRNEaoX-SKQ",
         more_data={
+            "BASED ON THE BOOK": "THE STATE VERSUS NELSON MANDELA BY JOEL JOFFE",
             "YEAR / FORMAT": "2017 / LIVE ACTION / FEATURE FILM",
             "DIRECTED BY": "JEAN VAN DE VELDE",
             "SCREENPLAY BY": "DOMINIC MORGAN, MATT HARVEY, JEAN VAN DE VELDE",
-            "BASED ON THE BOOK": "THE STATE VERSUS NELSON MANDELA BY JOEL JOFFE",
             "PRODUCED BY": "RICHARD CLAUS, MIKE AURET, HUGH ROGERS",
-            "CAST": "PETER PAUL MULLER, ANTOINETTE LOUW AND SELLO MOTLOUNG",
+            "CAST": "PETER PAUL MULLER, ANTOINETTE LOUW, SELLO MOTLOUNG",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNN-VARA (NETHERLANDS)",
             "INT. SALES": "CINEMA MANAGEMENT GROUP ",
         },
@@ -103,7 +106,7 @@ MOVIES.append(
         description="""Rudolph, a 13-year-old vampire, meets Tony, a mortal boy his age who loves old castles, graveyards and vampires. Tony helps Rudolph to fight against a notorious vampire hunter, and together they save Rudolph's family and become friends.""",
         awards=[
             "THE NETHERLANDS' FIRST-EVER 3D ANIMATED FEATURE FILM",
-            "WORLD WIDE BOX OFFICE $ 14 MILLION",
+            "WORLD WIDE BOX OFFICE $14 MILLION",
         ],
         trailer_url="https://youtu.be/CB_-u2lMNxw",
         more_data={
@@ -122,7 +125,7 @@ MOVIES.append(
 MOVIES.append(
     Movie(
         name="sugar",
-        title="THE PRICE OF SUGAR",
+        title="THE COST OF SUGAR",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>""",
@@ -131,10 +134,10 @@ MOVIES.append(
         ],
         trailer_url="https://youtu.be/IEhbgSiT-Fo",
         more_data={
+            "BASED ON THE BOOK": "THE COST OF SUGAR BY CYNTHIA MCLEOD",
             "YEAR / FORMAT": "2013 / LIVE ACTION / FEATURE FILM AND SERIES",
             "DIRECTED BY": "JEAN VAN DE VELDE",
             "SCREENPLAY BY": "JEAN VAN DE VELDE",
-            "BASED ON THE BOOK": "THE PRIZE OF SUGAR BY CYNTHIA MCLEOD",
             "PRODUCED BY": "PAUL VOORTHUYSEN, RICHARD CLAUS, MIKE AURET",
             "CAST": "YOOTHA WONG-LOI-SING, GAITE JANSEN",
             "CO-PRODUCERS": "SPIER FILMS (SOUTH AFRICA), BNNVARA (NETHERLANDS), PV PICTURES (NETHERLANDS)",
@@ -153,8 +156,8 @@ MOVIES.append(
 """,
         awards=[
             "PLATINUM FILM AWARD (>500K ADMISSIONS NETHERLANDS)",
-            "GOLDEN CALF BEST EDITING J.P. LUIJSTERBURG NETHERLANDS",
-            "GOLDEN CALF BEST PRODUCTION DESIGN WILBERT VAN DORP NETHERLANDS",
+            "BEST EDITING J.P. LUIJSTERBURG AT NETHERLANDS GOLDEN CALF AWARDS",
+            "BEST PRODUCTION DESIGN WILBERT VAN DORP AT NETHERLANDS GOLDEN CALF AWARDS",
         ],
         trailer_url="https://youtu.be/YJ3MeOIAueI",
         more_data={
@@ -178,16 +181,16 @@ MOVIES.append(
         description="""In Apartheid-torn South Africa, poet Ingrid Jonker (Carice van Houten) struggles tragically in search of love and a sense of home.<br><br>
 """,
         awards=[
+            "BEST PICTURE AT NETHERLANDS GOLDEN CALF AWARDS",
+            "CALF BEST ACTRESS CARICE VAN HOUTEN AT NETHERLANDS GOLDEN CALF AWARDS",
+            "BEST EDITING SANDER VOS AT NETHERLANDS GOLDEN CALF AWARDS",
+            "BEST FEATURE FILM SAFTA AWARDS SOUTH AFRICA",
+            "BEST ACHIEVEMENT IN CINEMATOGRAPHY SAFTA AWARDS SOUTH AFRICA",
+            "BEST ACHIEVEMENT IN PRODUCTION DESIGN SAFTA AWARDS SOUTH AFRICA",
+            "BEST ACHIEVEMENT IN MAKE-UP AND HAIRSTYLING SAFTA AWARDS SOUTH AFRICA",
+            "BEST ACHIEVEMENT IN COSTUME DESIGN SAFTA AWARDS SOUTH AFRICA",
+            "BEST ACHIEVEMENT IN ORIGINAL MUSIC/SCORE SAFTA AWARDS SOUTH AFRICA",
             "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
-            "GOLDEN CALF BEST PICTURE NETHERLANDS",
-            "GOLDEN CALF BEST ACTRESS CARICE VAN HOUTEN NETHERLANDS",
-            "GOLDEN CALF BEST EDITING SANDER VOS NETHERLANDS",
-            "SAFTA BEST FEATURE FILM SOUTH AFRICA",
-            "SAFTA BEST ACHIEVEMENT IN CINEMATOGRAPHY SOUTH AFRICA",
-            "SAFTA BEST ACHIEVEMENT IN PRODUCTION DESIGN SOUTH AFRICA",
-            "SAFTA BEST ACHIEVEMENT IN MAKE-UP AND HAIRSTYLING SOUTH AFRICA",
-            "SAFTA BEST ACHIEVEMENT IN COSTUME DESIGN SOUTH AFRICA",
-            "SAFTA BEST ACHIEVEMENT IN ORIGINAL MUSIC/SCORE SOUTH AFRICA",
             "WINNER JURY AWARD BEST ACTRESS TRIBECA FILM FESTIVAL",
             "WINNER BEST DUTCH ACTRESS CARICE VAN HOUTEN REMBRANDT AWARDS",
             "WINNER AUDIENCE AWARD TAORMINA INTERNATIONAL FILM FESTIVAL",
@@ -215,7 +218,7 @@ MOVIES.append(
 """,
         awards=[
             "GOLDEN FILM AWARD (>100K ADMISSIONS NETHERLANDS)",
-            "CANNES SELECTION UN CERTAIN REGARD",
+            "OFFICIAL SELECTION CANNES UN CERTAIN REGARD",
             "WINNER BEST NARRATIVE FEATURE AT THE BLACK FILM FESTIVAL MONTREAL",
         ],
         trailer_url="https://youtu.be/VnmKdHgS9Z4",
@@ -242,10 +245,10 @@ MOVIES.append(
 """,
         trailer_url="https://youtu.be/KFQvMHUU3ko",
         more_data={
+            "BASED ON THE BOOK": "THE THIEF LORD BY CORNELIA FUNKE",
             "YEAR / FORMAT": "2005 / LIVE ACTION / FEATURE FILM ",
             "DIRECTED BY ": "RICHARD CLAUS",
             "SCREENPLAY BY ": "DANIEL MUSGRAVE, RICHARD CLAUS",
-            "BASED ON THE BOOK": "THE THIEF LORD BY CORNELIA FUNKE",
             "PRODUCED BY": "RICHARD CLAUS",
             "CAST": "AARON TAYLOR-JOHNSON, JIM CARTER, VANESSA REDGRAVE, GEORGE MACKAY, CAROLINE GOODALL",
             "CO-PRODUCERS": "DELUX PRODUCTIONS (LUXEMBOURG), WARNER BROS (UK/GERMANY), 20TH CENTURY FOX (US)",
@@ -263,7 +266,7 @@ MOVIES.append(
         description="""A lonely American boy living in Scotland makes a new best friend, a fellow nine-year-old who happens to be a vampire..<br><br>
 """,
         awards=[
-            "GERMAN FILM AWARD GOLD BEST FAMILY FILM",
+            "GERMAN FILM AWARD IN GOLD AS BEST FAMILY FILM",
             "WORLD WIDE BOX OFFICE $ 28 MILLION",
         ],
         trailer_url="https://youtu.be/HRHWVeVFVf8",
@@ -315,7 +318,7 @@ MOVIES.append(
         description="""A mute make-up artist working on a slasher movie being shot in Moscow, is locked in the studio after hours. While there, she witnesses a brutal murder, and must escape capture.<br><br>""",
         awards=[
             "OFFICIAL SELECTION SUNDANCE",
-            "CANNES DIRECTOR’S FORTNIGHT",
+            "OFFICIAL SELECTION CANNES DIRECTOR’S FORTNIGHT",
             "WINNER SPECIAL JURY PRICE GÉRARDMER FILM FESTIVAL FRANCE",
         ],
         trailer_url="https://youtu.be/Ss5Hw3uiArs",
@@ -339,7 +342,7 @@ TEXT_SECTIONS = {
     "Producers": """<h2>RICHARD CLAUS</h2>
 <p>Richard Claus studied at the German Film and Television Academy in Berlin. After graduating he worked as a cameraman, directed and shot several TV documentaries and wrote and directed two theatrical films. In 1986 Richard co-founded and served as the managing director of the German production and distribution company Delta Film in Berlin and produced several mostly German language theatrical feature films. In 1994 he co-founded the Cometstone companies with offices in Amsterdam and Los Angeles, which he was running until 1999. During this period, he lived predominantly in Los Angeles. In 2000 Richard moved back from the US to Europe, producing with his companies Comet Film in Germany and Cool Beans in the Netherlands, and between 2008 and 2017 Richard produced five theatrical films in South Africa. Richard also produced and directed the animated movies The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023).</p>
 <h2>CHANTAL NISSEN</h2>
-<p>Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and in Journalism, with a focus on audience viewer experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. Besides feature films from children’s live-action television and human-interest programs to long- and short-form documentaries and video installations. Chantal’s work thrives on the pursuit of compelling stories and remarkable characters, wherever they may lead.has worked across most European countries, as well as South Africa, Australia, and the United States.</p>
+<p>Chantal Nissen holds a Master of Arts in Television Studies from the University of Amsterdam, complemented by a minor in American Studies and in Journalism, with a focus on viewer experiences. Her career reflects a dynamic passion for storytelling, collaborating with writers and directors across a wide range of genres, formats and techniques. In addition to feature films, her work spans children's live-action as well as human interest television, long- and short-form documentaries and video installations, and she has collaborated in and across most European countries, as well as in South Africa, Australia and the United States.</p>
 <h2>RIENKJE ATTOH</h2>
 <p>Rienkje Attoh started her professional career as a Broadcast Journalist, working in news and entertainment for the BBC, ITN and Euronews. In 2012 she decided to follow her lifelong passion to produce, and secured a spot at the reputable National Film and Television School (NFTS). During her first year she became one of the three recipients of the inaugural Prince William Scholarships in Film, Television and Games, supported by BAFTA and Warner Bros. She crowdfunded to make her first feature A Moving Image (2016). Later So & So Productions, was awarded a BFI Vision Award to develop its slate of film projects. Her second feature, Pond Life, starred Daisy Edgar-Jones, had its general release in the UK in 2018 in that same year she developed and co-produced the adaptation of Malorie Blackman’s NOUGHTS + CROSSES (2019) with Mammoth Screen, for the BBC. In 2020 she became one of Screen International’s UK and Ireland’s Stars of Tomorrow.  During the pandemic she made the hit TV series YOU DON’T KNOW ME (2021) for the BBC and Netflix.<p>
 """,
@@ -380,7 +383,6 @@ Richard: <a href="mailto:rc@cometfilm.com">rc@cometfilm.com</a>
 <li>BRAM FISCHER, 2017, directed by Jean van de Velde, the first official Netherlands/South-African co-production, which won multiple awards at festivals and two Golden Calves at the Dutch Film Awards
 <li>PANDA BEAR IN AFRICA, 2024, an animated film directed by Richard Claus and Karsten Kiilerich, in co-production with A. Film (Denmark), Le Pacte (France) and Comet Film (Germany), with sales agent CMG
 </ul>
-<p>Commencing in 2008, Comet Film has co-produced most of its sister company Cool Beans’ international co-production. </p>
 <br>
 <p><strong>BROADBEAN MEDIA (PTY) LTD</strong><br>
 30 Rose Street<br>
@@ -398,14 +400,14 @@ Rienkje: <a href="mailto:info@soandsoprod.com">info@soandsoprod.com</a>
 """,
     "KATUNI": """
 <img src="assets/KatuniLogo_PNG.png" style="width:50%;max-width:150px">
-<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2020) and Panda Bear in Africa (2023), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2d. <br>
+<p>Katuni Animation is the animation arm of Cool Beans, located in the heart of Amsterdam, specializing in high-quality computer-animation. Together, Katuni and Cool Beans have produced The Little Vampire 3D (2017), Ainbo - Spirit of the Amazon (2021) and Panda Bear in Africa (2024), all of which had world-wide releases and immediately put Katuni on the map as the Dutch animation studio with the widest international reach. Currently Katuni is in active development of several new animated movies, both 3D and 2D. <br>
 <br>
 Haarlemmerweg 317-H<br>
 1051 LG Amsterdam<br>
 The Netherlands<br>
 <br>
-Richard: <a href="mailto:rc@coolbeanspix.com">rc@coolbeanspix.com</a><br>
-Chantal: <a href="mailto:cn@coolbeanspix.com">cn@coolbeanspix.com</a><br>
+Richard: <a href="mailto:rc@katuni.eu">rc@katuni.eu</a><br>
+Chantal: <a href="mailto:chantal@katuni.eu">chantal@katuni.eu</a><br>
 </p>
 """,
 }
@@ -457,7 +459,7 @@ IMDB_LINKS = {
     "LIAM CUNNINGHAM": "https://www.imdb.com/name/nm0192377",
     "MARINA ZUDINA": "https://www.imdb.com/name/nm0958461",
     "LOLA RAIE": "https://www.imdb.com/name/nm6952869",
-    # 'ROBERT SPRACKLING': "",
+    "ROBERT SPRACKLING": "https://www.imdb.com/name/nm0819522",
     "PAULA VAN DER OEST": "https://www.imdb.com/name/nm0644309",
     "DOMINIC MORGAN": "https://www.imdb.com/name/nm2788920",
     "MATT HARVEY": "https://www.imdb.com/name/nm2791452",
@@ -474,5 +476,8 @@ IMDB_LINKS = {
     "EVAN RICHARDS": "https://www.imdb.com/name/nm0724084",
     "ANTOINETTE LOUW": "https://www.imdb.com/name/nm1943777",
     "SELLO MOTLOUNG": "https://www.imdb.com/name/nm0609382",
-    "THOM HOFFMANN": "https://www.imdb.com/name/nm0389109",
+    "KEES VAN BEIJNUM": "https://www.imdb.com/name/nm0067189",
+    "GREG LATTER": "https://www.imdb.com/name/nm0490417",
+    "DANIEL MUSGRAVE": "https://www.imdb.com/name/nm0615653",
+    # "THOM HOFFMAN": "https://www.imdb.com/name/nm0389109",
 }

@@ -1,0 +1,60 @@
+.image-container {
+  position: relative; /* This is needed to position the overlay relative to the container */
+  width: 100%; /* Set the container width */
+  height: 400px; /* Set a fixed height for the container (adjust as needed) */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Ensure that the image doesn't spill out of the container */
+}
+
+.responsive-image {
+  object-fit: contain; /* Ensures the image maintains aspect ratio and fits within the container */
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+/*.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  color: white;
+  transform: translate(20px, -100%);
+}
+*/
+
+.overlay {
+  position: absolute;
+  right: 20px; /* Initial inset from the left */
+  bottom: 20px; /* Distance from the bottom */
+/*  transform: translate(20px, -100%);*/
+}
+
+.overlay-round-box {
+  color: black;
+  background-color: rgba(255,255,255,0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.sidebar {
+  color: white;
+  background-color: rgba(255,0,0,1.0);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.locked-bottom-left {
+  position: fixed; /* Locks the element to the viewport */
+  bottom: 20px; /* Aligns it to the bottom */
+  left: 20px; /* Aligns it to the left */
+  z-index: 9999; /* Ensures it is above everything else */
+}
