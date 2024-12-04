@@ -119,6 +119,8 @@ def create_site(
             safe_title = section_title.replace(" ", "_").replace("&", "and").lower()
             navigation_targets[safe_title] = section_title
             new_sections[safe_title] = (section_title, content)
+    
+    navigation_targets["footer"] = "CONTACT"
 
     mrich.print(navigation_targets)
 
@@ -313,11 +315,16 @@ def create_site(
     html_buffer += '<div class="margin-if-wide">\n'
 
     # text content
-    html_buffer += '<div class="w3-content" style="max-width:800px">\n'
-    html_buffer += '<div class="w3-container w3-padding-large">\n'
+    html_buffer += f'<div class="w3-content w3-center w3-text-white w3-padding-large" style="max-width:{max_width}px;background-color:{accent_color1};margin-left:-220px">\n'
     html_buffer += '<div id="about" style="height: 100px; margin-top: -100px;"></div>'  ## offset hyperlink target
     # html_buffer += f'<h2 style="margin-left:200px">About {title}</h2>\n'
     html_buffer += f"<h2>ABOUT {title.upper()}</h2>\n"
+    html_buffer += "</div>\n"
+    html_buffer += '<div class="w3-content" style="max-width:800px">\n'
+    html_buffer += '<div class="w3-container w3-padding-large">\n'
+
+
+
     html_buffer += "<p>\n"
 
     html_buffer += text_buffer
@@ -329,24 +336,46 @@ def create_site(
     # headshots
     html_buffer += '<div class="w3-content" style="max-width:600px">\n'
     html_buffer += '<div class="w3-cell-row">\n'
+
     html_buffer += '<div class="w3-container w3-cell w3-center">\n'
     html_buffer += '<img src="assets/Richard_Claus_1.jpg" alt="Richard_Claus_1" style="width:100%;max-width:200px" class="w3-padding">\n'
+    # html_buffer += '<h4 style="color:black">Richard Claus</h4>\n'
+    # html_buffer += "<p>rc@coolbeanspix.com</p>\n"
+    html_buffer += "</div>\n"
+
+    html_buffer += '<div class="w3-container w3-cell w3-center">\n'
+    html_buffer += '<img src="assets/chantal.jpg" alt="Chantal_Nissen" style="width:100%;max-width:200px" class="w3-padding">\n'
+    # html_buffer += '<h4 style="color:black">Chantal Nissen</h4>\n'
+    # html_buffer += "<p>cn@coolbeanspix.com</p>\n"
+    html_buffer += "</div>\n"
+
+    html_buffer += '<div class="w3-container w3-cell w3-center">\n'
+    html_buffer += '<img src="assets/rienkje.jpg" alt="Rienkje Attoh" style="width:100%;max-width:200px" class="w3-padding">\n'
+    # html_buffer += '<h4 style="color:black">Rienkje Attoh</h4>\n'
+    # html_buffer += "<p>ra@coolbeanspix.com</p>\n"
+    html_buffer += "</div>\n"
+    
+    html_buffer += "</div>\n"
+    
+    html_buffer += '<div class="w3-cell-row">\n'
+
+    html_buffer += '<div class="w3-container w3-cell w3-center">\n'
     html_buffer += '<h4 style="color:black">Richard Claus</h4>\n'
-    # html_buffer += '<p>+31 (0) 650281410\n'
     html_buffer += "<p>rc@coolbeanspix.com</p>\n"
     html_buffer += "</div>\n"
+
     html_buffer += '<div class="w3-container w3-cell w3-center">\n'
-    # html_buffer += '<img src="assets/Chantal_Nissen.jpg" alt="Chantal_Nissen" style="width:100%;max-width:200px" class="w3-padding">\n'
-    html_buffer += '<img src="assets/chantal.jpg" alt="Chantal_Nissen" style="width:100%;max-width:200px" class="w3-padding">\n'
     html_buffer += '<h4 style="color:black">Chantal Nissen</h4>\n'
     html_buffer += "<p>cn@coolbeanspix.com</p>\n"
     html_buffer += "</div>\n"
+
     html_buffer += '<div class="w3-container w3-cell w3-center">\n'
-    html_buffer += '<img src="assets/rienkje.jpg" alt="Rienkje Attoh" style="width:100%;max-width:200px" class="w3-padding">\n'
     html_buffer += '<h4 style="color:black">Rienkje Attoh</h4>\n'
     html_buffer += "<p>ra@coolbeanspix.com</p>\n"
     html_buffer += "</div>\n"
+
     html_buffer += "</div>\n"
+    
     html_buffer += "</div>\n"
 
     # next section heading
@@ -545,7 +574,7 @@ def create_site(
     html_buffer += "</body>\n"
 
     # footer
-    html_buffer += f'<footer class="w3-container" style="padding:32px;background-color:{accent_color1}">\n'
+    html_buffer += f'<footer id="footer" class="w3-container" style="padding:32px;background-color:{accent_color1}">\n'
 
     # html_buffer += '<div class="margin-if-wide">\n'
 

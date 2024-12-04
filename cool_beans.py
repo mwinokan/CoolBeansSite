@@ -125,7 +125,7 @@ MOVIES.append(
 MOVIES.append(
     Movie(
         name="sugar",
-        title="THE COST OF SUGAR",
+        title="THE PRICE OF SUGAR",
         # year=2021,
         imdb_url=None,  # "https://www.imdb.com/title/tt6570098/",
         description="""The Price Of Sugar tells the alternately gripping, romantic and heart-wrenching story of Sarith and Mini-Mini as they grow up on the sugar plantations of Suriname in the latter half of the eighteenth century. Where Sarith is the most beautiful woman in the colony, the mulatto Mini-Mini is forever in her shadow, slave to her own half-sister.<br><br>""",
